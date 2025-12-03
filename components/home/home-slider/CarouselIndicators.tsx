@@ -1,5 +1,4 @@
 // app/components/home/home-slider/CarouselIndicators.tsx
-"use client";
 
 import React from "react";
 
