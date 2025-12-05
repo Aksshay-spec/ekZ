@@ -14,7 +14,8 @@ export default function SkuProductItem({ count, title, icon }: Props) {
   return (
     <div className="bg-blue-100 text-black rounded-lg shadow p-4 w-[150px] sm:w-[180px] relative mr-2">
       <div className="flex items-center gap-2 justify-center mt-2">
-        <span>{icon}</span>
+        {/* Wrap icon in a div to ensure color classes are applied */}
+        <span className="flex items-center justify-center">{icon}</span>
 
         <h2 className="text-3xl font-bold">{count}</h2>
       </div>

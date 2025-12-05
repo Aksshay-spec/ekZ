@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Partner With Us",
+    "subtitle": "Vendors & Distributors",
+    "mainIcon": "IoStorefrontOutline"
+  },
+  {
+    "id": 2,
+    "icon": "FaHandshake",
+    "bgColor": "bg-aqua-green-100",
+    "borderColor": "border-redish-pink-400",
+    "title": "87%",
+    "description": "Vendor Retention"
+  },
+  {
+    "id": 3,
+    "icon": "FaChartLine",
+    "bgColor": "bg-aqua-green-100",
+    "borderColor": "border-redish-pink-400",
+    "title": "R&D",
+    "description": "Co-development & R&D support"
+  },
+  {
+    "id": 4,
+    "icon": "FaBoxOpen",
+    "bgColor": "bg-aqua-green-100",
+    "borderColor": "border-redish-pink-400",
+    "title": "0 Recalls",
+    "description": "Zero product recall record"
+  }
+]

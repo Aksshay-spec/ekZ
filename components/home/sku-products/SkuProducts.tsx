@@ -25,15 +25,16 @@ export default function SkuProducts({ items }: { items: SkuProduct[] }) {
     async function loadIcons() {
       const promises = items.map(async (item) => {
         const IconComponent = await getDynamicIcon(item.icon);
+
         return {
           id: item.id,
-          icon: IconComponent ? <IconComponent className="text-2xl" /> : null,
+          icon: IconComponent ? <IconComponent className={item.class} /> : null,
         };
       });
 
       const loaded = await Promise.all(promises);
 
-      const map: Record<number, JSX.Element | null> = {};
+      const map: Record<number, React.ReactNode> = {};
       loaded.forEach((i) => (map[i.id] = i.icon));
 
       setIcons(map);
@@ -44,9 +45,11 @@ export default function SkuProducts({ items }: { items: SkuProduct[] }) {
 
   return (
     <section className="bg-white py-8 text-center">
-      <h3 className="mt-12 inline-block text-black px-3 py-1 font-semibold rounded relative
+      <h3
+        className="mt-12 inline-block text-black px-3 py-1 font-semibold rounded relative
         after:content-[''] after:block after:w-[90%] after:h-[8px] after:bg-yellow-400
-        after:mt-1 after:rounded-full after:mx-auto">
+        after:mt-1 after:rounded-full after:mx-auto"
+      >
         Every Count Tells Our Story
       </h3>
 
