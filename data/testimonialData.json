@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Contractor, Indore",
+    "text": "SAPTAAR switches are the most durable I’ve used.",
+    "rating": 5,
+    "image": "testimonial.png",
+    "bg": "bg-aqua-green-200"
+  },
+  {
+    "id": 2,
+    "name": "Dealer, Bhopal",
+    "text": "Fantastic support and reliable quality every time.",
+    "rating": 5,
+    "image": "testimonial.png",
+    "bg": "bg-aqua-green-200"
+  },
+  {
+    "id": 3,
+    "name": "Vendor, Ujjain",
+    "text": "Their service and response time are unmatched.",
+    "rating": 4,
+    "image": "testimonial.png",
+    "bg": "bg-aqua-green-200"
+  },
+  {
+    "id": 4,
+    "name": "Distributor, Gwalior",
+    "text": "Highly recommend for their commitment to quality.",
+    "rating": 5,
+    "image": "testimonial.png",
+    "bg": "bg-aqua-green-200"
+  },
+  {
+    "id": 5,
+    "name": "Partner, Jabalpur",
+    "text": "The best experience working with a trusted brand.",
+    "rating": 5,
+    "image": "testimonial.png",
+    "bg": "bg-aqua-green-200"
+  }
+]
