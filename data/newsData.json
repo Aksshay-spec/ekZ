@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Top 10 Electrical Brands in Central India",
+    "publication": "[Publication Name]",
+    "image": "news.png"
+  },
+  {
+    "id": 2,
+    "title": "Innovative Switch Designs Leading the Market",
+    "publication": "[Electrical Times]",
+    "image": "news.png"
+  },
+  {
+    "id": 3,
+    "title": "SAPTAAR Expands Its Vendor Network Nationwide",
+    "publication": "[Business Insider]",
+    "image": "newss.png"
+  },
+  {
+    "id": 4,
+    "title": "How Smart Distribution Changed Electrical Retail",
+    "publication": "[Industry Journal]",
+    "image": "news.png"
+  }
+]

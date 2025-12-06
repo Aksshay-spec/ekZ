@@ -1,0 +1,32 @@
+[
+  {
+    "year": "2012",
+    "text": "SAPTAAR launched",
+    "position": "left",
+    "colors": "from-red-400 via-blue-500 to-pink-400"
+  },
+  {
+    "year": "2015",
+    "text": "FMCG division introduced",
+    "position": "right",
+    "colors": "from-yellow-200 via-pink-300 to-pink-400"
+  },
+  {
+    "year": "2018",
+    "text": "1M+ electrical units sold",
+    "position": "left",
+    "colors": "from-red-400 via-blue-500 to-pink-400"
+  },
+  {
+    "year": "2020",
+    "text": "2M+ FMCG packs distributed",
+    "position": "right",
+    "colors": "from-yellow-200 via-pink-300 to-pink-400"
+  },
+  {
+    "year": "2021",
+    "text": "Vendor retention hits 87%",
+    "position": "left",
+    "colors": "from-red-400 via-blue-500 to-pink-400"
+  }
+]

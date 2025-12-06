@@ -3,10 +3,27 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme {
+@keyframes floatAround {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(3px, -4px);
+  }
+  50% {
+    transform: translate(-3px, 3px);
+  }
+  75% {
+    transform: translate(4px, 2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 
+@theme {
   /* Redish Pink palette (Brand 1 #ff5757) */
-  --color-redish-pink-50:  #fff7f7;
+  --color-redish-pink-50: #fff7f7;
   --color-redish-pink-100: #ffecec;
   --color-redish-pink-200: #ffd7d7;
   --color-redish-pink-300: #ffb6b6;
@@ -19,19 +36,18 @@
   --color-redish-pink-950: #411212;
 
   /* Aqua Green palette (Brand 2 #3ceac6) */
-  --color-aqua-green-50:  #effffb;
+  --color-aqua-green-50: #effffb;
   --color-aqua-green-100: #cbfff4;
   --color-aqua-green-200: #9afded;
   --color-aqua-green-300: #63f3e0;
-  --color-aqua-green-400: #33e6d1; 
-  --color-aqua-green-500: #3ceac6; 
+  --color-aqua-green-400: #33e6d1;
+  --color-aqua-green-500: #3ceac6;
   --color-aqua-green-600: #2fc2a5;
   --color-aqua-green-700: #249984;
   --color-aqua-green-800: #1b7465;
   --color-aqua-green-900: #165c52;
   --color-aqua-green-950: #08352f;
 }
-
 
 @theme inline {
   --color-background: var(--background);
@@ -71,8 +87,6 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-
-
 }
 
 :root {
