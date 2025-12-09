@@ -1,20 +1,17 @@
 import React from "react";
 import PolicyCard from "./PolicyCard";
 import { ShieldCheck, BadgeCheck, Lock, Scale } from "lucide-react";
+import PoliciesHeader from "./PoliciesHeader";
 
-export default function PoliciesSection() {
+export default function PoliciesCardContainer() {
   return (
     <section className="w-full py-12 px-4 text-center">
 
-      <h2 className="text-4xl font-extrabold">Our Legal Policies</h2>
-      <p className="text-lg font-medium text-gray-700">
-        Your Rights, Our Responsibility
-      </p>
-      <div className="w-32 h-1 bg-yellow-400 mx-auto mt-2 rounded-full" />
+      {/* Reusable Header */}
+      <PoliciesHeader />
 
       {/* PERFECT GRID FOR ALL DEVICES */}
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
-
         <PolicyCard
           href="/policies/warranty-electrical"
           title="Warranty terms for electrical products"
@@ -42,7 +39,6 @@ export default function PoliciesSection() {
           icon={<Scale size={60} color="var(--color-redish-pink-700)" />}
           circleVariant="secondary"
         />
-
       </div>
     </section>
   );
