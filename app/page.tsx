@@ -1,21 +1,26 @@
 import HomeSliderWrapper from "@/components/home/home-slider/HomeSliderWrapper";
-import OurJourneyWrapper from "@/components/home/our-journey/OurJourneyWrapper";
-import OurNewsWrapper from "@/components/home/our-news/OurNewsWrapper";
-import PartnerWrapper from "@/components/home/partner/PartnerWrapper";
-import SkuProductsWrapper from "@/components/home/sku-products/SkuProductsWrapper";
+
+import OurNewsSection from "@/components/home/our-news/OurNewsSection";
+import PartnerSection from "@/components/home/partner/PartnerSection";
+import PolicySection from "@/components/home/policies/PolicySection";
+
+import SkuProductsSection from "@/components/home/sku-products/SkuProductsSection";
 import TestimonialWrapper from "@/components/home/testimonial/TestimonialWrapper";
-import TrendingProductsWrapper from "@/components/home/trending-products/TrendingProductsWrapper";
+import SaptaarSection from "@/components/home/timeline/SaptaarSection";
+import TrendingProductsSection from "@/components/home/trending-products/TrendingProductsSection";
 
 export default async function Page() {
   return (
     <main>
       <HomeSliderWrapper />
-      <TrendingProductsWrapper />
-      <SkuProductsWrapper />
+      <TrendingProductsSection />
+      <SkuProductsSection />
       <TestimonialWrapper />
-      <OurNewsWrapper />
-      <OurJourneyWrapper />
-      <PartnerWrapper />
+      <OurNewsSection />
+      <SaptaarSection />
+      <PartnerSection />
+      <PolicySection />
+
     </main>
   );
 }
