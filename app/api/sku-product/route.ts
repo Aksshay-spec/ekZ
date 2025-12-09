@@ -9,9 +9,9 @@ export async function GET() {
     const repo = SkuProductRepositoryFactory.getInstance();
     const service = new SkuProductService(repo);
 
-    const products = await service.getProducts();
+    const skus = await service.getSkus();
 
-    return NextResponse.json(products);
+    return NextResponse.json(skus);
   } catch (error) {
     console.error("sku-product GET error:", error);
     return NextResponse.json(

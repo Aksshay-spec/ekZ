@@ -3,57 +3,48 @@
     "id": 1,
     "count": "150+",
     "title": "Electrical SKUs",
-    "icon": "FaBolt",
-    "class": "text-yellow-500 text-3xl"
+    "icon": "FaBolt"
   },
   {
     "id": 2,
     "count": "200+",
     "title": "FMCG SKUs",
-    "icon": "FaShoppingBasket",
-    "class": "text-redish-pink-500 text-3xl"
+    "icon": "FaShoppingBasket"
   },
   {
     "id": 3,
     "count": "175+",
     "title": "Electrical SKUs",
-    "icon": "FaBolt",
-    "class": "text-yellow-500 text-3xl"
+    "icon": "FaBolt"
   },
   {
     "id": 4,
     "count": "220+",
     "title": "FMCG SKUs",
-    "icon": "FaShoppingBasket",
-    "class": "text-redish-pink-500 text-3xl"
+    "icon": "FaShoppingBasket"
   },
   {
     "id": 5,
     "count": "190+",
     "title": "Electrical SKUs",
-    "icon": "FaBolt",
-    "class": "text-yellow-500 text-3xl",
-    "class": "text-yellow-500 text-3xl"
+    "icon": "FaBolt"
   },
   {
     "id": 6,
     "count": "250+",
     "title": "FMCG SKUs",
-    "icon": "FaShoppingBasket",
-    "class": "text-redish-pink-500 text-3xl"
+    "icon": "FaShoppingBasket"
   },
   {
     "id": 7,
     "count": "300+",
     "title": "Electrical SKUs",
-    "icon": "FaBolt",
-    "class": "text-yellow-500 text-3xl"
+    "icon": "FaBolt"
   },
   {
     "id": 8,
     "count": "275+",
     "title": "FMCG SKUs",
-    "icon": "FaShoppingBasket",
-    "class": "text-redish-pink-500 text-3xl"
+    "icon": "FaShoppingBasket"
   }
 ]

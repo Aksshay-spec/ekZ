@@ -2,7 +2,7 @@
 
 import type { TrendingProductRepository } from "../interfaces/TrendingProductRepository";
 import { TrendingProductJsonRepository } from "../implementations/TrendingProductJsonRepository";
-// import { TrendingProductFirebaseRepository } from "../implementations/TrendingProductFirebaseRepository";
+
 
 export class TrendingProductRepositoryFactory {
   static getInstance(): TrendingProductRepository {

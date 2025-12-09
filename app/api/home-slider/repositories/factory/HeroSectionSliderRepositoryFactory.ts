@@ -1,6 +1,5 @@
 import type { HeroSectionSliderRepository } from "../interfaces/HeroSectionSliderRepository";
 import { HeroSectionSliderJsonRepository } from "../implementations/HeroSectionSliderJsonRepository";
-// import { HeroSectionSliderFirebaseRepository } from "../implementations/HeroSectionSliderFirebaseRepository";
 
 export class HeroSectionSliderFactory {
   static getInstance(): HeroSectionSliderRepository {

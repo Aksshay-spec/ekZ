@@ -1,17 +1,21 @@
+//components/home/trending-products/TrendingProductItem.tsx
 import Image from "next/image";
 import type { TrendingProduct } from "@/app/api/trending-products/types/trendingProduct.types";
 
-type Props = {
+export default function TrendingProductItem({
+  product,
+}: {
   product: TrendingProduct;
-};
-
-export default function TrendingProductItem({ product }: Props) {
+}) {
   const imageSrc = product?.image
     ? `/images/${product.image}`
     : "/images/placeholder.png";
 
   return (
-    <div className="w-28 h-28  rounded-full flex items-center justify-center overflow-hidden">
+    <div
+      className="w-18 h-18 rounded-full flex items-center justify-center overflow-hidden 
+                 border-2 border-black border-dashed"
+    >
       <Image
         src={imageSrc}
         alt={`Product ${product.id}`}

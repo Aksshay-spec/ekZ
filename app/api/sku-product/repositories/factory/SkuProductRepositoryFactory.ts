@@ -2,7 +2,7 @@
 
 import type { SkuProductRepository } from "../interfaces/SkuProductRepository";
 import { SkuProductJsonRepository } from "../implementations/SkuProductJsonRepository";
-// import { SkuProductFirebaseRepository } from "../implementations/SkuProductFirebaseRepository";
+
 
 export class SkuProductRepositoryFactory {
   static getInstance(): SkuProductRepository {

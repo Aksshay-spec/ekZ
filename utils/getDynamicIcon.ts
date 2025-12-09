@@ -1,19 +1,21 @@
+import { FiBox } from "react-icons/fi";
+
 export async function getDynamicIcon(iconName: string) {
   const libraries = [
-    "fa", // FontAwesome
+    "fa",
     "fa6",
-    "md", // Material
-    "gi", // Game Icons
-    "io", // Ionicons
+    "md",
+    "gi",
+    "io",
     "io5",
     "bs",
     "bi",
-    "ri", // Remix Icons
-    "hi", // Heroicons
+    "ri",
+    "hi",
     "hi2",
-    "si", // Simple Icons
-    "tb", // Tabler
-    "pi", // Phosphor
+    "si",
+    "tb",
+    "pi",
     "ti",
     "im",
     "cg",
@@ -24,9 +26,10 @@ export async function getDynamicIcon(iconName: string) {
       const module = await import(`react-icons/${lib}`);
       if (module[iconName]) return module[iconName];
     } catch (err) {
-      // ignore and continue
+      console.error(`Icon load failed: ${iconName} from ${lib}`, err);
     }
   }
 
-  return null;
+  // Default fallback icon
+  return FiBox;
 }
