@@ -2,9 +2,11 @@
 
 import React from "react";
 import { TimelineCard } from "@/components/ui/cards";
-import { ShootingStars } from "@/src/components/ui/shadcn-io/shooting-stars/index";
+import { ShootingStars } from "@/components/ui/shadcn-io/shooting-stars/index";
 
 export default function SaptaarTimelines() {
+  const pinkBlue = "from-red-400 via-blue-500 to-pink-400";
+  const yellowPink = "from-yellow-200 via-pink-300 to-pink-400";
   return (
     <section className="relative bg-black py-20 px-6 sm:px-10 lg:px-12 text-center w-full overflow-hidden">
       {/* Background with stars */}
@@ -12,8 +14,6 @@ export default function SaptaarTimelines() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.1)_0%,rgba(0,0,0,0)_70%)]" />
         <div className="shooting-stars-bg absolute inset-0" />
       </div>
-
-
 
       <div className="relative max-w-screen-xl mx-auto w-[90%] md:w-[80%]">
         <h2 className="text-4xl font-playfair font-extrabold text-white mb-4">
