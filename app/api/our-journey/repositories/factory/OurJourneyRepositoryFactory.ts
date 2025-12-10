@@ -2,7 +2,7 @@
 
 import type { OurJourneyRepository } from "../interfaces/OurJourneyRepository";
 import { OurJourneyJsonRepository } from "../implementations/OurJourneyJsonRepository";
-// import { OurJourneyFirebaseRepository } from "../implementations/OurJourneyFirebaseRepository";
+
 
 export class OurJourneyRepositoryFactory {
   static getInstance(): OurJourneyRepository {

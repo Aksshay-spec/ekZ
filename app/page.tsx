@@ -1,13 +1,18 @@
+import AboutSection from "@/components/home/about-section/AboutSection";
+import FmcgSection from "@/components/home/Fmcg-section/FmcgSection";
+import FmcgStatSection from "@/components/home/fmcg-stats/FmcgStatSection";
 import HomeSliderWrapper from "@/components/home/home-slider/HomeSliderWrapper";
-
+import OurJourneyWrapper from "@/components/home/our-journey/OurJourneySection";
 import OurNewsSection from "@/components/home/our-news/OurNewsSection";
 import PartnerSection from "@/components/home/partner/PartnerSection";
 import PolicySection from "@/components/home/policies/PolicySection";
 
 import SkuProductsSection from "@/components/home/sku-products/SkuProductsSection";
-import TestimonialWrapper from "@/components/home/testimonial/TestimonialWrapper";
+import TestimonialSection from "@/components/home/testimonial/TestimonialSection";
 import SaptaarSection from "@/components/home/timeline/SaptaarSection";
 import TrendingProductsSection from "@/components/home/trending-products/TrendingProductsSection";
+import ExploreMoreSection from "@/components/home/explore/ExploreMoreSection";
+import ExploreStatsWrapper from "@/components/home/explore-stats/ExploreStats";
 
 export default async function Page() {
   return (
@@ -15,11 +20,13 @@ export default async function Page() {
       <HomeSliderWrapper />
       <TrendingProductsSection />
       <SkuProductsSection />
-      <TestimonialWrapper />
+      <TestimonialSection />
       <OurNewsSection />
       <SaptaarSection />
       <PartnerSection />
       <PolicySection />
+      <ExploreMoreSection />
+      <ExploreStatsWrapper />
 
     </main>
   );

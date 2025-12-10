@@ -2,7 +2,7 @@
 
 import type { TestimonialRepository } from "../interfaces/TestimonialRepository";
 import { TestimonialJsonRepository } from "../implementations/TestimonialJsonRepository";
-// import { TestimonialFirebaseRepository } from "../implementations/TestimonialFirebaseRepository";
+
 
 export class TestimonialRepositoryFactory {
   static getInstance(): TestimonialRepository {

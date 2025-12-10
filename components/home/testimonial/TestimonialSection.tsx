@@ -3,6 +3,7 @@
 import { TestimonialRepositoryFactory } from "@/app/api/testimonials/repositories/factory/TestimonialRepositoryFactory";
 import { TestimonialService } from "@/app/api/testimonials/services/testimonial.service";
 import TestimonialCarousel from "./TestimonialCarousel";
+import SectionHeader from "@/components/common/SectionHeader";
 
 export default async function TestimonialSection() {
   const repo = TestimonialRepositoryFactory.getInstance();
@@ -12,7 +13,7 @@ export default async function TestimonialSection() {
 
   return (
     <section className="bg-white pt-8 pb-20 overflow-hidden text-center">
-      <h3 className="font-bold font-playfair text-3xl font-bold text-black mb-1">
+      {/* <h3 className="font-bold font-playfair text-3xl font-bold text-black mb-1">
         Every Input Matters
       </h3>
 
@@ -22,7 +23,12 @@ export default async function TestimonialSection() {
           after:bg-yellow-400 after:mt-1 after:rounded-full after:mx-auto"
       >
         Vendors & Distributors
-      </p>
+      </p> */}
+      <SectionHeader
+        title="Every Input Matters"
+        subtitle="Vendors & Distributors"
+        subtitleClassName="font-playfair"
+      />
 
       <TestimonialCarousel testimonials={testimonials} />
     </section>

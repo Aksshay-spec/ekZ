@@ -1,15 +1,20 @@
 import React from "react";
 import PolicyCard from "./PolicyCard";
 import { ShieldCheck, BadgeCheck, Lock, Scale } from "lucide-react";
+import SectionHeader from "@/components/common/SectionHeader";
 
 export default function PoliciesCardContainer() {
   return (
     <section className="w-full py-12 px-4 text-center">
-      <h2 className="text-4xl font-bold font-playfair">Our Legal Policies</h2>
+      {/* <h2 className="text-4xl font-bold font-playfair">Our Legal Policies</h2>
       <p className="text-lg font-bold font-playfair text-black rounded relative after:content-[''] after:block after:w-[40%] after:h-[8px] after:bg-yellow-400 after:mt-1 after:rounded-full after:mx-auto">
         Your Rights, Our Responsibility
-      </p>
-      
+      </p> */}
+      <SectionHeader
+        title="Our Legal Policies"
+        subtitle="Your Rights, Our Responsibility"
+        subtitleClassName="font-playfair"
+      />
 
       {/* PERFECT GRID FOR ALL DEVICES */}
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">

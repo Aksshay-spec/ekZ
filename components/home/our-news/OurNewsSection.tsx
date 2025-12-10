@@ -3,6 +3,7 @@
 import { OurNewsRepositoryFactory } from "@/app/api/our-news/repositories/factory/OurNewsRepositoryFactory";
 import { OurNewsService } from "@/app/api/our-news/services/ourNews.service";
 import OurNewsCarousel from "./OurNewsCarousel";
+import SectionHeader from "@/components/common/SectionHeader";
 
 export default async function OurNewsSection() {
   const repo = OurNewsRepositoryFactory.getInstance();
@@ -12,7 +13,7 @@ export default async function OurNewsSection() {
 
   return (
     <section className="bg-white pt-8 pb-20 overflow-hidden text-center">
-      <h3
+      {/* <h3
         className="
           mt-8 inline-block text-black px-3 py-1 
           font-bold font-playfair text-3xl sm:text-4xl
@@ -28,7 +29,13 @@ export default async function OurNewsSection() {
           after:bg-yellow-400 after:mt-1 after:rounded-full after:mx-auto"
       >
         Your Trust our Guarantee
-      </h4>
+      </h4> */}
+
+      <SectionHeader
+        title="Our related News"
+        subtitle="Your Trust our Guarantee"
+        subtitleClassName="font-playfair"
+      />
 
       <OurNewsCarousel news={news} />
     </section>
