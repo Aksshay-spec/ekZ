@@ -1,8 +1,5 @@
-import AboutSection from "@/components/home/about-section/AboutSection";
-import FmcgSection from "@/components/home/Fmcg-section/FmcgSection";
-import FmcgStatSection from "@/components/home/fmcg-stats/FmcgStatSection";
 import HomeSliderWrapper from "@/components/home/home-slider/HomeSliderWrapper";
-import OurJourneyWrapper from "@/components/home/our-journey/OurJourneySection";
+
 import OurNewsSection from "@/components/home/our-news/OurNewsSection";
 import PartnerSection from "@/components/home/partner/PartnerSection";
 import PolicySection from "@/components/home/policies/PolicySection";
@@ -27,7 +24,6 @@ export default async function Page() {
       <PolicySection />
       <ExploreMoreSection />
       <ExploreStatsWrapper />
-
     </main>
   );
 }
