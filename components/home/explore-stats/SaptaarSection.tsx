@@ -3,7 +3,16 @@
 import SectionHeader from "@/components/common/SectionHeader";
 import HorizontalCard from "@/components/ui/cards/HorizontalCard";
 import CircleIcon from "@/components/ui/CircleIcon";
-import { Plug, ShieldCheck, Zap, Cpu, Boxes, Lightbulb, Badge, FireExtinguisher } from "lucide-react";
+import {
+  Plug,
+  ShieldCheck,
+  Zap,
+  Cpu,
+  Boxes,
+  Lightbulb,
+  Badge,
+  FireExtinguisher,
+} from "lucide-react";
 
 export default function SaptaarSection() {
   return (
@@ -14,10 +23,15 @@ export default function SaptaarSection() {
         subtitle="Powering Every Connection"
       />
 
+      {/* Background Image */}
+      <img
+        src="/images/2.png"
+        alt="About Background"
+        className=" w-full h-full object-cover"
+      />
+
       {/* STATS */}
       <div className="grid grid-cols-1 gap-10 mt-8">
-
-
         <HorizontalCard
           icon={<Boxes size={60} />}
           title="150+"

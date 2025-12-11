@@ -3,20 +3,27 @@
 import SectionHeader from "@/components/common/SectionHeader";
 import CircleIcon from "@/components/ui/CircleIcon";
 import { PackageCheck, Warehouse, Boxes, Undo2 } from "lucide-react";
+import Image from "next/image";
 
 export default function FmcgSection() {
   return (
     <div className="text-center">
-
       {/* IMPORTED HEADER */}
       <SectionHeader
         title="Ekjahan FMCG"
         subtitle="Powering Every Connection"
       />
 
+      <Image
+        src="/images/3.png"
+        alt="Ekjahan FMCG Products"
+        width={500}
+        height={500}
+        className="mx-auto w-full  object-contain rounded-xl"
+      />
+
       {/* STATS — ALWAYS 2 CIRCLES PER ROW */}
       <div className="grid grid-cols-2 gap-10 mt-8">
-
         <div className="flex flex-col items-center text-center">
           <CircleIcon variant="primary" size={140}>
             <PackageCheck size={60} color="white" />
@@ -50,7 +57,6 @@ export default function FmcgSection() {
           <h3 className="text-4xl font-bold mt-4">ZERO</h3>
           <p className="text-lg opacity-85 mt-1">Product Recalls</p>
         </div>
-
       </div>
     </div>
   );
