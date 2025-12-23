@@ -1,5 +1,5 @@
 import React from "react";
-import { BaseCard } from "@/components/ui/cards";
+import { BaseCard } from "@/components/common/cards";
 
 export default function BenefitRow({
   icon,
@@ -10,7 +10,6 @@ export default function BenefitRow({
 }) {
   return (
     <div className="flex items-center gap-4 w-full">
-
       <BaseCard
         variant="primary"
         shade={300}

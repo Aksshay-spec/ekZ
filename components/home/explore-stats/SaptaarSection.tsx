@@ -1,8 +1,8 @@
 "use client";
 
 import SectionHeader from "@/components/common/SectionHeader";
-import HorizontalCard from "@/components/ui/cards/HorizontalCard";
-import CircleIcon from "@/components/ui/CircleIcon";
+import HorizontalCard from "@/components/common/cards/HorizontalCard";
+import CircleIcon from "@/components/common/CircleIcon";
 import {
   Plug,
   ShieldCheck,

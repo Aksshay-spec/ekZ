@@ -8,12 +8,3 @@ export type JourneyItem = {
 
 // Aliases so frontend components can import more semantic names
 export type TimelineItemType = JourneyItem;
-
-export interface Star {
-  id: number;
-  x: number;
-  y: number;
-  size: number;
-  duration: number;
-  delay: number;
-}

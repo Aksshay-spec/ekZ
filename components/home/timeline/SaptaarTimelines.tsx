@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { TimelineCard } from "@/components/ui/cards";
+import { TimelineCard } from "@/components/common/cards";
 import { ShootingStars } from "@/components/ui/shadcn-io/shooting-stars/index";
 import SectionHeader from "@/components/common/SectionHeader";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { BaseCard } from "@/components/ui/cards";
+import { BaseCard } from "@/components/common/cards";
 
 export default function VendorBenefit({
   icon,
@@ -19,9 +19,7 @@ export default function VendorBenefit({
         {icon}
       </BaseCard>
 
-      <p className="text-sm font-semibold mt-2 leading-tight">
-        {text}
-      </p>
+      <p className="text-sm font-semibold mt-2 leading-tight">{text}</p>
     </div>
   );
 }

@@ -6,10 +6,11 @@ import PolicySection from "@/components/home/policies/PolicySection";
 
 import SkuProductsSection from "@/components/home/sku-products/SkuProductsSection";
 import TestimonialSection from "@/components/home/testimonial/TestimonialSection";
-import SaptaarSection from "@/components/home/timeline/SaptaarSection";
+// import SaptaarSection from "@/components/home/timeline/SaptaarSection";
 import TrendingProductsSection from "@/components/home/trending-products/TrendingProductsSection";
 import ExploreMoreSection from "@/components/home/explore/ExploreMoreSection";
 import ExploreStatsWrapper from "@/components/home/explore-stats/ExploreStats";
+import OurJourneySection from "@/components/home/our-journey/OurJourneySection";
 
 export default async function Page() {
   return (
@@ -19,7 +20,8 @@ export default async function Page() {
       <SkuProductsSection />
       <TestimonialSection />
       <OurNewsSection />
-      <SaptaarSection />
+      {/* <SaptaarSection /> */}
+      <OurJourneySection />
       <PartnerSection />
       <PolicySection />
       <ExploreMoreSection />

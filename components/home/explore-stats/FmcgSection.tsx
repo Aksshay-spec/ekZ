@@ -1,7 +1,7 @@
 "use client";
 
 import SectionHeader from "@/components/common/SectionHeader";
-import CircleIcon from "@/components/ui/CircleIcon";
+import CircleIcon from "@/components/common/CircleIcon";
 import { PackageCheck, Warehouse, Boxes, Undo2 } from "lucide-react";
 import Image from "next/image";
 

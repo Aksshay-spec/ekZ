@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import CircleIcon from "@/components/ui/CircleIcon";
-import LinearCard from "@/components/ui/cards/LinearCard";
+import CircleIcon from "@/components/common/CircleIcon";
+import LinearCard from "@/components/common/cards/LinearCard";
 
 type TimelineCardProps = {
   align?: "left" | "right";

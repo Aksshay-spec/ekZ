@@ -43,7 +43,7 @@ export default function LinearCard({
     <div
       className={cn(
         "w-full flex items-center justify-center shadow-md transition-all duration-300",
-        "text-center text-sm p-6 md:p-8 font-semibold",
+        "text-center text-sm md:text-lg p-6 md:p-10 font-semibold",
         className
       )}
       style={{

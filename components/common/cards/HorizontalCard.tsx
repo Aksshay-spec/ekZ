@@ -2,7 +2,7 @@
 
 import React from "react";
 import { cn } from "@/lib/utils";
-import BaseCard from "@/components/ui/cards/BaseCard";
+import BaseCard from "@/components/common/cards/BaseCard";
 
 type IconBg = "redish-pink" | "aqua-green";
 

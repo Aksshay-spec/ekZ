@@ -2,8 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import BaseCard from "@/components/ui/cards/BaseCard";
-import CircleIcon from "@/components/ui/CircleIcon";
+import BaseCard from "@/components/common/cards/BaseCard";
+import CircleIcon from "@/components/common/CircleIcon";
 
 export default function PolicyCard({
   href,
