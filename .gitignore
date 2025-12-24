@@ -41,3 +41,8 @@ yarn-error.log*
 next-env.d.ts
 
 app/components/career-search/CareerSearchSection-v1.tsx
+app/api/career-cards copy/
+components/careers/career-accordion-v1/
+components/careers/career-cards-v1/
+components/careers/career-cards/CareerCard-v1.tsx
+data/careerCardData-v1.json

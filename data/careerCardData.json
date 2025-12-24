@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "slug": "sales-marketing",
+    "title": "Sales & Marketing",
+    "description": "Drive lead generation and client acquisition through strategic sales outreach and targeted marketing campaigns.",
+    "image": "/images/sales.jpg",
+    "applyHref": "/careers/sales-marketing/apply",
+    "postedDate": "2025-01-10",
+    "endDate": "2025-02-15",
+    "location": "Mumbai, India",
+    "employmentType": "Full Time",
+    "experience": "2–5 Years",
+    "positions": 3,
+    "requirements": [
+      "Strong communication and negotiation skills",
+      "Experience with CRM tools",
+      "Understanding of digital marketing funnels"
+    ],
+    "responsibilities": [
+      "Identify and pursue new business opportunities",
+      "Manage client relationships",
+      "Collaborate with marketing team"
+    ],
+    "qualifications": [
+      "Bachelor’s degree in Business or Marketing",
+      "Proven sales experience"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "engineering",
+    "title": "Engineering",
+    "description": "Build scalable products and platforms with modern technologies and strong engineering principles.",
+    "image": "/images/engineering.jpg",
+    "applyHref": "/careers/engineering/apply",
+    "postedDate": "2025-01-05",
+    "endDate": "2025-02-20",
+    "location": "Remote / Hybrid",
+    "employmentType": "Full Time",
+    "experience": "3–6 Years",
+    "positions": 5,
+    "requirements": [
+      "Strong knowledge of JavaScript / TypeScript",
+      "Experience with React & Node.js",
+      "Understanding of system design"
+    ],
+    "responsibilities": [
+      "Develop scalable applications",
+      "Write clean and maintainable code",
+      "Participate in code reviews"
+    ],
+    "qualifications": [
+      "Bachelor’s degree in Computer Science",
+      "Hands-on experience with modern frameworks"
+    ]
+  }
+]
