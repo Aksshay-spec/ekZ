@@ -1,4 +1,4 @@
-//components/warranty/warranty-forms/ManualCaptcha.tsx
+//components/common/ManualCaptcha.tsx
 "use client";
 
 import { useState } from "react";

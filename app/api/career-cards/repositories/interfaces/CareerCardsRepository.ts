@@ -5,4 +5,3 @@ export interface CareerCardsRepository {
   getCareerCards(): Promise<CareerCardItem[]>
   getCareerCardBySlug(slug: string): Promise<CareerCardItem | null>
 }
-

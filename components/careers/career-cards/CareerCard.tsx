@@ -49,12 +49,14 @@ export default function CareerCard({ item }: Props) {
 
       {/* Footer */}
       <CardFooter className="px-6 pb-6 pt-0">
+        <Link href={`/career/${item.slug}/apply`}>
         <Button
           variant="secondary"
           className="bg-redish-pink-500 text-white rounded-full px-10 hover:bg-red-600"
         >
           Apply Now
         </Button>
+        </Link>
         <Link href={`/career/${item.slug}`}>
           <Button
             variant="secondary"

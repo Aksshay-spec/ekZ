@@ -13,4 +13,3 @@ export class CareerCardsJsonRepository implements CareerCardsRepository {
     return cards.find(card => card.slug === slug) ?? null
   }
 }
-

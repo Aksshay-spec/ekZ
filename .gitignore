@@ -46,3 +46,4 @@ components/careers/career-accordion-v1/
 components/careers/career-cards-v1/
 components/careers/career-cards/CareerCard-v1.tsx
 data/careerCardData-v1.json
+app/career/[slug]/page-v3.tsx
