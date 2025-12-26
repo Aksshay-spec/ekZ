@@ -151,7 +151,7 @@ export default function CareerApplyForm({ jobSlug }: { jobSlug: string }) {
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="bg-redish-pink-500 text-white rounded-full px-10"
+          className="bg-redish-pink-500 text-white rounded-full px-10 cursor-pointer"
         >
           {isSubmitting ? "Submitting..." : "Submit Application"}
         </Button>
