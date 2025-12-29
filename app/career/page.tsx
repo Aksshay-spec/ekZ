@@ -1,5 +1,5 @@
 // app/career/page.tsx
-import CareerSearchClient from "@/components/careers/career-search/CareerSearchClient";
+import CareerSearchClient from "@/components/careers/career-search/CareerSearchSection";
 import CareerCardsSection from "@/components/careers/career-cards/CareerCardsSection";
 import CareerAccordionSection from "@/components/careers/career-accordion/CareerAccordionSection";
 

@@ -1,26 +1,9 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/navigator/Header";
 import Footer from "@/components/navigator/Footer";
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -35,16 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google reCAPTCHA v2 - NO render parameter for v2! */}
         <Script
-          src="https://www.google.com/recaptcha/api.js"
-          strategy="lazyOnload"
+          src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+          strategy="afterInteractive"
         />
       </head>
 
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}
-      >
+      <body className="antialiased">
         <Header />
         {children}
         <Footer />

@@ -1,6 +1,7 @@
-//components/careers/career-apply/CareerApplyForm.tsx
+// components/careers/career-apply/CareerApplyForm.tsx
 "use client";
 
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -11,13 +12,21 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/components/ui/form";
-
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import ManualCaptcha from "@/components/common/ManualCaptcha";
 
+declare global {
+  interface Window {
+    grecaptcha: any;
+  }
+}
+
+/* -------------------- */
+/* VALIDATION SCHEMA */
+/* -------------------- */
 const schema = z.object({
   fullName: z.string().min(2),
   email: z.string().email(),
@@ -31,6 +40,12 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 export default function CareerApplyForm({ jobSlug }: { jobSlug: string }) {
+  const [manualCaptcha, setManualCaptcha] = useState<any>(null);
+  const [pendingData, setPendingData] = useState<FormValues | null>(null);
+
+  // ✅ file state ONLY for resume reset & upload
+  const [resumeFile, setResumeFile] = useState<File | null>(null);
+
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
     defaultValues: {
@@ -40,54 +55,123 @@ export default function CareerApplyForm({ jobSlug }: { jobSlug: string }) {
       location: "",
       experience: "",
       coverLetter: "",
-      resume: null, // 👈 important
+      resume: null,
     },
   });
 
-  //   async function onSubmit(values: FormValues) {
-  //     const resumeFile = values.resume[0];
-
-  //     // Later: upload resume to S3/Firebase
-  //     const resumeUrl = resumeFile.name;
-
-  //     await fetch("/api/career-applications", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         jobSlug,
-  //         ...values,
-  //         resumeUrl,
-  //       }),
-  //     });
-  //   }
-
   const { isSubmitting } = form.formState;
 
-  async function onSubmit(values: FormValues) {
-    console.log("FORM SUBMITTED", values);
+  /* -------------------- */
+  /* SAFE CAPTCHA EXEC */
+  /* -------------------- */
+  async function runRecaptcha(): Promise<string | null> {
+    if (!window.grecaptcha) return null;
 
-    const resumeFile = values.resume?.[0];
-    if (!resumeFile) {
-      console.error("No resume selected");
-      return;
-    }
+    return new Promise((resolve) => {
+      try {
+        window.grecaptcha.ready(async () => {
+          const timeout = setTimeout(() => resolve(null), 4000);
 
-    const res = await fetch("/api/career-applications", {
-      method: "POST",
-      body: JSON.stringify({
-        jobSlug,
-        ...values,
-        resumeUrl: resumeFile.name,
-      }),
+          try {
+            const token = await window.grecaptcha.execute(
+              process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
+              { action: "career_apply" }
+            );
+
+            clearTimeout(timeout);
+            resolve(token || null);
+          } catch {
+            clearTimeout(timeout);
+            resolve(null);
+          }
+        });
+      } catch {
+        resolve(null);
+      }
     });
-    if (!res.ok) {
-      console.error("Submission failed");
-      return;
-    }
-
-    // ✅ RESET FORM WHEN SUBMIT
-    form.reset();
   }
 
+  /* -------------------- */
+  /* SUBMIT */
+  /* -------------------- */
+  async function onSubmit(values: FormValues) {
+    const token = await runRecaptcha();
+
+    if (!token) {
+      return fallbackToManual(values);
+    }
+
+    const res = await fetch("/api/captcha/recaptcha", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ token }),
+    });
+
+    const result = await res.json();
+
+    if (!result.success) {
+      return fallbackToManual(values);
+    }
+
+    await submitForm(values);
+  }
+
+  /* -------------------- */
+  /* FALLBACK CAPTCHA */
+  /* -------------------- */
+  async function fallbackToManual(values: FormValues) {
+    const captcha = await fetch("/api/captcha/manual").then((r) => r.json());
+    setManualCaptcha(captcha);
+    setPendingData(values);
+  }
+
+  /* -------------------- */
+  /* FINAL SUBMIT (FormData) */
+  /* -------------------- */
+  async function submitForm(values: FormValues) {
+    const formData = new FormData();
+
+    formData.append("jobSlug", jobSlug);
+    formData.append("fullName", values.fullName);
+    formData.append("email", values.email);
+    formData.append("phone", values.phone);
+    formData.append("location", values.location);
+    formData.append("experience", values.experience);
+    formData.append("coverLetter", values.coverLetter);
+
+    if (resumeFile) {
+      formData.append("resume", resumeFile);
+    }
+
+    await fetch("/api/career-applications", {
+      method: "POST",
+      body: formData,
+    });
+
+    // ✅ reset everything properly
+    form.reset();
+    setResumeFile(null);
+    setManualCaptcha(null);
+    setPendingData(null);
+
+    alert("Captcha verified and application submitted successfully.");
+  }
+
+  /* -------------------- */
+  /* MANUAL CAPTCHA VIEW */
+  /* -------------------- */
+  if (manualCaptcha) {
+    return (
+      <ManualCaptcha
+        challenge={manualCaptcha}
+        onSuccess={() => submitForm(pendingData!)}
+      />
+    );
+  }
+
+  /* -------------------- */
+  /* FORM UI */
+  /* -------------------- */
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -100,7 +184,6 @@ export default function CareerApplyForm({ jobSlug }: { jobSlug: string }) {
               <FormControl>
                 <Input {...field} />
               </FormControl>
-              <FormMessage />
             </FormItem>
           )}
         />
@@ -118,17 +201,21 @@ export default function CareerApplyForm({ jobSlug }: { jobSlug: string }) {
           )}
         />
 
+        {/* ✅ Resume Upload (reset-safe) */}
         <FormField
           name="resume"
           control={form.control}
-          render={({ field: { onChange, ...field } }) => (
+          render={() => (
             <FormItem>
-              <FormLabel>Upload Resume</FormLabel>
+              <FormLabel>Resume</FormLabel>
               <FormControl>
                 <Input
                   type="file"
-                  accept=".pdf,.doc,.docx"
-                  onChange={(e) => onChange(e.target.files)}
+                  key={resumeFile ? resumeFile.name : "empty"} // forces reset
+                  onChange={(e) => {
+                    const file = e.target.files?.[0] || null;
+                    setResumeFile(file);
+                  }}
                 />
               </FormControl>
             </FormItem>
@@ -142,16 +229,15 @@ export default function CareerApplyForm({ jobSlug }: { jobSlug: string }) {
             <FormItem>
               <FormLabel>Cover Letter</FormLabel>
               <FormControl>
-                <Textarea rows={6} {...field} />
+                <Textarea {...field} />
               </FormControl>
             </FormItem>
           )}
         />
 
         <Button
-          type="submit"
+          className="bg-redish-pink-500 text-white"
           disabled={isSubmitting}
-          className="bg-redish-pink-500 text-white rounded-full px-10"
         >
           {isSubmitting ? "Submitting..." : "Submit Application"}
         </Button>
