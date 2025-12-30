@@ -1,5 +1,7 @@
 // app/components/home/home-slider/CarouselIndicators.tsx
 
+import React from "react";
+
 type Props = {
   count: number;
   selectedIndex: number;
@@ -21,7 +23,6 @@ export default function CarouselIndicators({
           }`}
           onClick={() => onSelect(i)}
           aria-label={`Go to slide ${i + 1}`}
-          type="button"
         />
       ))}
     </div>

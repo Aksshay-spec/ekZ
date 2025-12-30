@@ -1,0 +1,140 @@
+[
+  {
+    "id": "el-001",
+    "slug": "22kw-ev-charger-havells",
+    "title": "22 kW MotrON GT EV Charger",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "EV Chargers",
+    "brand": "Havells",
+    "price": 53550,
+    "mrp": 93500,
+    "rating": 4.5,
+    "reviewCount": 312,
+    "colors": ["Silver", "Black"],
+    "images": ["1.png"],
+    "specifications": {
+      "power": "22kW",
+      "voltageRange": "340V-460V",
+      "connectivity": "WiFi + GSM",
+      "ocpp": true,
+      "certification": "IEC 61851"
+    },
+    "tags": ["EV", "Charger", "Smart", "Industrial"],
+    "stock": { "available": true, "quantity": 25 },
+    "createdAt": "2025-01-10"
+  },
+  {
+    "id": "el-002",
+    "slug": "7kw-home-ev-charger",
+    "title": "7 kW Home EV Charger",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "EV Chargers",
+    "brand": "Tata Power",
+    "price": 38500,
+    "mrp": 52000,
+    "rating": 4.2,
+    "reviewCount": 198,
+    "colors": ["White"],
+    "images": ["2.png"],
+    "specifications": {
+      "power": "7kW",
+      "voltageRange": "220V",
+      "connectivity": "WiFi",
+      "ocpp": false,
+      "certification": "BIS"
+    },
+    "tags": ["EV", "Home"],
+    "stock": { "available": true, "quantity": 40 },
+    "createdAt": "2025-01-09"
+  },
+  {
+    "id": "el-003",
+    "slug": "industrial-control-panel",
+    "title": "Industrial Electrical Control Panel",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Panels",
+    "brand": "L&T",
+    "price": 112000,
+    "mrp": 145000,
+    "rating": 4.6,
+    "reviewCount": 86,
+    "colors": ["Gray"],
+    "images": ["1.png"],
+    "specifications": {
+      "protection": "IP65",
+      "material": "Mild Steel",
+      "certification": "ISO 9001"
+    },
+    "tags": ["Industrial", "Panel"],
+    "stock": { "available": true, "quantity": 12 },
+    "createdAt": "2025-01-08"
+  },
+  {
+    "id": "el-004",
+    "slug": "solar-inverter-5kw",
+    "title": "5 kW Solar Hybrid Inverter",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Inverters",
+    "brand": "Luminous",
+    "price": 68500,
+    "mrp": 92000,
+    "rating": 4.4,
+    "reviewCount": 245,
+    "colors": ["White"],
+    "images": ["2.png"],
+    "specifications": {
+      "power": "5kW",
+      "batterySupport": true,
+      "phase": "Single"
+    },
+    "tags": ["Solar", "Inverter"],
+    "stock": { "available": true, "quantity": 30 },
+    "createdAt": "2025-01-07"
+  },
+
+  {
+    "id": "el-005",
+    "slug": "industrial-led-highbay",
+    "title": "Industrial LED Highbay Light",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Lighting",
+    "brand": "Philips",
+    "price": 14500,
+    "mrp": 22000,
+    "rating": 4.3,
+    "reviewCount": 410,
+    "colors": ["Black"],
+    "images": ["1.png"],
+    "specifications": {
+      "wattage": "150W",
+      "lumens": "18000",
+      "lifetime": "50000 hrs"
+    },
+    "tags": ["LED", "Industrial"],
+    "stock": { "available": true, "quantity": 120 },
+    "createdAt": "2025-01-06"
+  },
+
+  {
+    "id": "el-006",
+    "slug": "mcb-switch-32a",
+    "title": "32A MCB Switch",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Switchgear",
+    "brand": "Schneider",
+    "price": 650,
+    "mrp": 950,
+    "rating": 4.7,
+    "reviewCount": 980,
+    "colors": ["White"],
+    "images": ["2.png"],
+    "specifications": {
+      "current": "32A",
+      "curve": "C",
+      "certification": "IEC"
+    },
+    "tags": ["MCB", "Safety"],
+    "stock": { "available": true, "quantity": 500 },
+    "createdAt": "2025-01-05"
+  }
+]

@@ -1,5 +1,3 @@
-import HomeSliderWrapper from "@/components/home/home-slider/HomeSliderWrapper";
-
 import OurNewsSection from "@/components/home/our-news/OurNewsSection";
 import PartnerSection from "@/components/home/partner/PartnerSection";
 import PolicySection from "@/components/home/policies/PolicySection";
@@ -11,11 +9,12 @@ import TrendingProductsSection from "@/components/home/trending-products/Trendin
 import ExploreMoreSection from "@/components/home/explore/ExploreMoreSection";
 import ExploreStatsWrapper from "@/components/home/explore-stats/ExploreStats";
 import OurJourneySection from "@/components/home/our-journey/OurJourneySection";
+import HomeSliderSection from "@/components/home/home-slider/HomeSliderSection";
 
 export default async function Page() {
   return (
     <main>
-      <HomeSliderWrapper />
+      <HomeSliderSection />
       <TrendingProductsSection />
       <SkuProductsSection />
       <TestimonialSection />

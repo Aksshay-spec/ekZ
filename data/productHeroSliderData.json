@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "1.png",
+    "title": "Ekjahan Enterprises",
+    "heading": ["Powering Homes", "Nourishing Lives"],
+    "description": "Electricity powers homes. We power trust. Food fuels families. We nourish lives."
+  },
+  {
+    "id": 2,
+    "image": "2.png",
+    "title": "Ekjahan Enterprises",
+    "heading": ["Connecting Energy", "and Essentials"],
+    "description": "We deliver quality products and trusted services that keep homes powered and families happy."
+  },
+  {
+    "id": 3,
+    "image": "3.png",
+    "title": "Ekjahan Enterprises",
+    "heading": ["Your Trust", "Our Guarantee"],
+    "description": "From power tools to provisions, we're committed to excellence and reliability."
+  }
+]

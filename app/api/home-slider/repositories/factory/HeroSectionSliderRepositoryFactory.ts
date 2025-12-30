@@ -1,15 +1,19 @@
+//app/api/home-slider/repositories/factory/HeroSectionSliderRepositoryFactory.ts
 import type { HeroSectionSliderRepository } from "../interfaces/HeroSectionSliderRepository";
 import { HeroSectionSliderJsonRepository } from "../implementations/HeroSectionSliderJsonRepository";
+import { ProductHeroSliderJsonRepository } from "../implementations/ProductHeroSliderJsonRepository";
 
 export class HeroSectionSliderFactory {
-  static getInstance(): HeroSectionSliderRepository {
-    // Change this condition in future
-    const useFirebase = process.env.HOME_SLIDER_USE_FIREBASE === "true";
+  static getInstance(
+    context: "home" | "product" = "home"
+  ): HeroSectionSliderRepository {
+    switch (context) {
+      case "product":
+        return new ProductHeroSliderJsonRepository();
 
-    if (useFirebase) {
-      // return new HeroSectionSliderFirebaseRepository();
+      case "home":
+      default:
+        return new HeroSectionSliderJsonRepository();
     }
-
-    return new HeroSectionSliderJsonRepository();
   }
 }

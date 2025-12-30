@@ -1,0 +1,103 @@
+[
+  {
+    "id": "fm-001",
+    "slug": "premium-basmati-rice-5kg",
+    "title": "Premium Basmati Rice 5kg",
+    "category": "FMCG",
+    "subCategory": "Groceries",
+    "brand": "Saptaar Select",
+    "price": 699,
+    "mrp": 899,
+    "rating": 4.3,
+    "reviewCount": 1241,
+    "images": ["1.png"],
+    "specifications": {
+      "weight": "5kg",
+      "organic": true,
+      "shelfLife": "12 months"
+    },
+    "tags": ["Rice", "Organic"],
+    "stock": { "available": true, "quantity": 320 },
+    "createdAt": "2025-01-12"
+  },
+  {
+    "id": "fm-002",
+    "slug": "cold-pressed-mustard-oil",
+    "title": "Cold Pressed Mustard Oil 1L",
+    "category": "FMCG",
+    "subCategory": "Edible Oils",
+    "brand": "Dhara",
+    "price": 210,
+    "mrp": 260,
+    "rating": 4.4,
+    "reviewCount": 860,
+    "images": ["2.png"],
+    "specifications": {
+      "volume": "1L",
+      "coldPressed": true
+    },
+    "tags": ["Oil", "Healthy"],
+    "stock": { "available": true, "quantity": 450 },
+    "createdAt": "2025-01-11"
+  },
+  {
+    "id": "fm-003",
+    "slug": "whole-wheat-atta-10kg",
+    "title": "Whole Wheat Atta 10kg",
+    "category": "FMCG",
+    "subCategory": "Groceries",
+    "brand": "Aashirvaad",
+    "price": 525,
+    "mrp": 620,
+    "rating": 4.5,
+    "reviewCount": 2100,
+    "images": ["1.png"],
+    "specifications": {
+      "weight": "10kg",
+      "fiberRich": true
+    },
+    "tags": ["Atta", "Daily Use"],
+    "stock": { "available": true, "quantity": 500 },
+    "createdAt": "2025-01-10"
+  },
+  {
+    "id": "fm-004",
+    "slug": "organic-honey-500g",
+    "title": "Organic Forest Honey 500g",
+    "category": "FMCG",
+    "subCategory": "Health",
+    "brand": "Patanjali",
+    "price": 285,
+    "mrp": 360,
+    "rating": 4.2,
+    "reviewCount": 640,
+    "images": ["2.png"],
+    "specifications": {
+      "weight": "500g",
+      "organic": true
+    },
+    "tags": ["Honey", "Organic"],
+    "stock": { "available": true, "quantity": 210 },
+    "createdAt": "2025-01-09"
+  },
+  {
+    "id": "fm-005",
+    "slug": "instant-coffee-200g",
+    "title": "Instant Coffee Powder 200g",
+    "category": "FMCG",
+    "subCategory": "Beverages",
+    "brand": "Nescafe",
+    "price": 450,
+    "mrp": 520,
+    "rating": 4.6,
+    "reviewCount": 1320,
+    "images": ["1.png"],
+    "specifications": {
+      "weight": "200g",
+      "caffeine": "Medium"
+    },
+    "tags": ["Coffee"],
+    "stock": { "available": true, "quantity": 380 },
+    "createdAt": "2025-01-08"
+  }
+]
