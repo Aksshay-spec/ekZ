@@ -1,29 +1,36 @@
-//app/api/products/filters/product.filter.ts
+// app/api/products/filters/product.filter.ts
 import type { Product } from "../types/product.types";
 
 export class ProductFilter {
   static apply(products: Product[], params: URLSearchParams): Product[] {
     let filtered = [...products];
 
-    const brand = params.get("brand");
-    const color = params.get("color");
-    const minPrice = params.get("minPrice");
-    const maxPrice = params.get("maxPrice");
+    /* ---------------- COLORS ---------------- */
+    const colors = params.getAll("colors");
 
-    if (brand) {
-      filtered = filtered.filter((p) => p.brand === brand);
+    if (colors.length > 0) {
+      filtered = filtered.filter((product) =>
+        product.colors?.some((color) => colors.includes(color.toLowerCase()))
+      );
     }
 
-    if (color) {
-      filtered = filtered.filter((p) => p.colors?.includes(color));
-    }
+    /* ---------------- PRICE ---------------- */
+    const priceRanges = params.getAll("price");
 
-    if (minPrice) {
-      filtered = filtered.filter((p) => p.price >= Number(minPrice));
-    }
+    if (priceRanges.length > 0) {
+      filtered = filtered.filter((product) => {
+        return priceRanges.some((range) => {
+          // e.g. "50000+"
+          if (range.includes("+")) {
+            const min = Number(range.replace("+", ""));
+            return product.price >= min;
+          }
 
-    if (maxPrice) {
-      filtered = filtered.filter((p) => p.price <= Number(maxPrice));
+          // e.g. "5000-20000"
+          const [min, max] = range.split("-").map(Number);
+          return product.price >= min && product.price <= max;
+        });
+      });
     }
 
     return filtered;

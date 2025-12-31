@@ -1,5 +1,7 @@
 //app/api/products/types/product.types.ts
-export type ProductCategory = "SAPTAAR_ELECTRIC" | "FMCG";
+export const PRODUCT_CATEGORIES = ["SAPTAAR_ELECTRIC", "FMCG"] as const;
+
+export type ProductCategory = (typeof PRODUCT_CATEGORIES)[number];
 
 export type Product = {
   id: string;

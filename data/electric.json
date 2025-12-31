@@ -91,7 +91,6 @@
     "stock": { "available": true, "quantity": 30 },
     "createdAt": "2025-01-07"
   },
-
   {
     "id": "el-005",
     "slug": "industrial-led-highbay",
@@ -114,7 +113,6 @@
     "stock": { "available": true, "quantity": 120 },
     "createdAt": "2025-01-06"
   },
-
   {
     "id": "el-006",
     "slug": "mcb-switch-32a",
@@ -136,5 +134,220 @@
     "tags": ["MCB", "Safety"],
     "stock": { "available": true, "quantity": 500 },
     "createdAt": "2025-01-05"
+  },
+
+  {
+    "id": "el-007",
+    "slug": "smart-energy-meter",
+    "title": "Smart Digital Energy Meter",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Meters",
+    "brand": "Secure",
+    "price": 4200,
+    "mrp": 6500,
+    "rating": 4.1,
+    "reviewCount": 210,
+    "colors": ["White"],
+    "images": ["1.png"],
+    "specifications": {
+      "phase": "Single",
+      "communication": "RF",
+      "accuracy": "Class 1"
+    },
+    "tags": ["Meter", "Smart"],
+    "stock": { "available": true, "quantity": 200 },
+    "createdAt": "2025-01-04"
+  },
+  {
+    "id": "el-008",
+    "slug": "industrial-power-cable",
+    "title": "Industrial Copper Power Cable",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Cables",
+    "brand": "Polycab",
+    "price": 8200,
+    "mrp": 11000,
+    "rating": 4.6,
+    "reviewCount": 540,
+    "colors": ["Black"],
+    "images": ["2.png"],
+    "specifications": {
+      "core": "4 Core",
+      "material": "Copper",
+      "insulation": "PVC"
+    },
+    "tags": ["Cable", "Industrial"],
+    "stock": { "available": true, "quantity": 90 },
+    "createdAt": "2025-01-03"
+  },
+  {
+    "id": "el-009",
+    "slug": "solar-panel-550w",
+    "title": "550W Mono PERC Solar Panel",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Solar Panels",
+    "brand": "Adani Solar",
+    "price": 16500,
+    "mrp": 24500,
+    "rating": 4.5,
+    "reviewCount": 375,
+    "colors": ["Blue"],
+    "images": ["1.png"],
+    "specifications": {
+      "power": "550W",
+      "cellType": "Mono PERC",
+      "efficiency": "21%"
+    },
+    "tags": ["Solar", "Panel"],
+    "stock": { "available": true, "quantity": 150 },
+    "createdAt": "2025-01-02"
+  },
+  {
+    "id": "el-010",
+    "slug": "ups-10kva",
+    "title": "10 kVA Industrial UPS",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "UPS",
+    "brand": "APC",
+    "price": 185000,
+    "mrp": 235000,
+    "rating": 4.6,
+    "reviewCount": 98,
+    "colors": ["Black"],
+    "images": ["2.png"],
+    "specifications": {
+      "capacity": "10 kVA",
+      "backup": "2 Hours",
+      "phase": "Three"
+    },
+    "tags": ["UPS", "Industrial"],
+    "stock": { "available": true, "quantity": 8 },
+    "createdAt": "2025-01-01"
+  },
+  {
+    "id": "el-011",
+    "slug": "led-street-light-120w",
+    "title": "120W LED Street Light",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Lighting",
+    "brand": "Wipro",
+    "price": 6800,
+    "mrp": 9800,
+    "rating": 4.2,
+    "reviewCount": 610,
+    "colors": ["Gray"],
+    "images": ["1.png"],
+    "specifications": {
+      "wattage": "120W",
+      "ipRating": "IP66"
+    },
+    "tags": ["LED", "Outdoor"],
+    "stock": { "available": true, "quantity": 300 },
+    "createdAt": "2024-12-31"
+  },
+  {
+    "id": "el-012",
+    "slug": "industrial-vfd-drive",
+    "title": "Industrial VFD Drive",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Drives",
+    "brand": "ABB",
+    "price": 96500,
+    "mrp": 125000,
+    "rating": 4.7,
+    "reviewCount": 142,
+    "colors": ["Gray"],
+    "images": ["2.png"],
+    "specifications": {
+      "powerRange": "7.5kW",
+      "control": "Vector Control"
+    },
+    "tags": ["VFD", "Automation"],
+    "stock": { "available": true, "quantity": 18 },
+    "createdAt": "2024-12-30"
+  },
+  {
+    "id": "el-013",
+    "slug": "acb-1600a",
+    "title": "1600A Air Circuit Breaker",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Switchgear",
+    "brand": "Siemens",
+    "price": 245000,
+    "mrp": 310000,
+    "rating": 4.8,
+    "reviewCount": 64,
+    "colors": ["Black"],
+    "images": ["1.png"],
+    "specifications": {
+      "current": "1600A",
+      "breakingCapacity": "65kA"
+    },
+    "tags": ["ACB", "Safety"],
+    "stock": { "available": true, "quantity": 6 },
+    "createdAt": "2024-12-29"
+  },
+  {
+    "id": "el-014",
+    "slug": "smart-switch-touch",
+    "title": "Smart Touch Switch",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Smart Home",
+    "brand": "Legrand",
+    "price": 3200,
+    "mrp": 5200,
+    "rating": 4.3,
+    "reviewCount": 720,
+    "colors": ["Black", "Gold"],
+    "images": ["2.png"],
+    "specifications": {
+      "connectivity": "WiFi",
+      "voiceSupport": true
+    },
+    "tags": ["Smart", "Home"],
+    "stock": { "available": true, "quantity": 260 },
+    "createdAt": "2024-12-28"
+  },
+  {
+    "id": "el-015",
+    "slug": "transformer-100kva",
+    "title": "100 kVA Distribution Transformer",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Transformers",
+    "brand": "Kirloskar",
+    "price": 325000,
+    "mrp": 415000,
+    "rating": 4.6,
+    "reviewCount": 51,
+    "colors": ["Blue"],
+    "images": ["1.png"],
+    "specifications": {
+      "capacity": "100 kVA",
+      "cooling": "ONAN"
+    },
+    "tags": ["Transformer", "Industrial"],
+    "stock": { "available": true, "quantity": 5 },
+    "createdAt": "2024-12-27"
+  },
+  {
+    "id": "el-016",
+    "slug": "industrial-earthing-electrode",
+    "title": "Copper Bonded Earthing Electrode",
+    "category": "SAPTAAR_ELECTRIC",
+    "subCategory": "Earthing",
+    "brand": "JEF",
+    "price": 4800,
+    "mrp": 7200,
+    "rating": 4.4,
+    "reviewCount": 330,
+    "colors": ["Copper"],
+    "images": ["2.png"],
+    "specifications": {
+      "length": "3 Meter",
+      "material": "Copper Bonded Steel"
+    },
+    "tags": ["Earthing", "Safety"],
+    "stock": { "available": true, "quantity": 180 },
+    "createdAt": "2024-12-26"
   }
 ]

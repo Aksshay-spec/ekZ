@@ -1,8 +1,8 @@
 // components/products/FiltersPanel.tsx
-
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
+import { useTransition } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -30,11 +30,13 @@ type Props = {
 export default function FiltersPanel({ filters }: Props) {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const [, startTransition] = useTransition();
 
   function toggleFilter(key: string, value: string) {
     const params = new URLSearchParams(searchParams.toString());
     const existing = params.getAll(key);
 
+    // toggle multi-select
     if (existing.includes(value)) {
       const updated = existing.filter((v) => v !== value);
       params.delete(key);
@@ -43,7 +45,13 @@ export default function FiltersPanel({ filters }: Props) {
       params.append(key, value);
     }
 
-    router.push(`?${params.toString()}`);
+    // reset pagination on filter change
+    params.delete("page");
+
+    // ✅ App Router–safe navigation
+    startTransition(() => {
+      router.push(`?${params.toString()}`, { scroll: false });
+    });
   }
 
   return (
@@ -55,6 +63,7 @@ export default function FiltersPanel({ filters }: Props) {
         {filters.map((group) => (
           <AccordionItem key={group.key} value={group.key}>
             <AccordionTrigger>{group.label}</AccordionTrigger>
+
             <AccordionContent className="space-y-2">
               {group.options.map((opt) => {
                 const checked = searchParams

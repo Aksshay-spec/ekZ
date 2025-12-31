@@ -8,4 +8,8 @@ export class CategoryService {
   async getCategories(): Promise<Category[]> {
     return this.repo.getAllCategories();
   }
+
+    async getActiveCategories(): Promise<Category[]> {
+    return this.getCategories();
+  }
 }

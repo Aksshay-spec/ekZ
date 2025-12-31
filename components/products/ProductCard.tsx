@@ -32,9 +32,9 @@ export default function ProductCard({ product }: Props) {
     : "/images/products/placeholder.png";
 
   return (
-    <Card className="hover:shadow-md transition">
+    <Card className="h-full flex flex-col gap-2 py-4 hover:shadow-md transition">
       <Link href={`/product/${product.slug}`}>
-        <CardContent className="p-4">
+        <CardContent className="px-2 flex-1">
           <div className="relative aspect-square mb-3">
             <Image
               src={imageSrc}
@@ -49,7 +49,7 @@ export default function ProductCard({ product }: Props) {
             {product.title}
           </h3>
 
-          <div className="flex items-center gap-2 text-sm">
+          <div className="flex items-center gap-4 text-sm">
             <span className="font-semibold">₹{product.price}</span>
             {discount && (
               <>
@@ -67,18 +67,18 @@ export default function ProductCard({ product }: Props) {
         </CardContent>
       </Link>
 
-      <CardFooter className="p-4 flex justify-between pt-0">
+      <CardFooter className="flex justify-between px-4 pt-0 mt-auto">
         <Button
           variant="secondary"
           className="bg-aqua-green-500 text-black rounded-full hover:bg-aqua-green-400"
         >
           View More
         </Button>
+
         {product.stock.available && (
-          //   <span className="text-xs text-red-500">Out of stock</span>
           <Button
             variant="secondary"
-            className="bg-redish-pink-500 disable text-white rounded-full hover:bg-redish-pink-400"
+            className="bg-redish-pink-500 text-white rounded-full hover:bg-redish-pink-400"
           >
             In Stock
           </Button>
