@@ -9,9 +9,9 @@ import { getFilterMetadata } from "@/lib/api/filters";
 import { mapSlugToCategory } from "@/lib/mappers/category.mapper";
 
 import HomeSliderSection from "@/components/products/home-slider/HomeSliderSection";
-import CategoryProductsSection from "@/components/products/category-products/CategoryProductsSection";
+import CategoryProductsSection from "@/components/products/category-carousel-products/CategoryProductsSection";
 import CategoryTrendingProductsSection from "@/components/products/category-trending-products/CategoryTrendingProductsSection";
-import ShowAllProductsSection from "@/components/products/ShowAllProductsSection";
+import ShowAllProductsSection from "@/components/products/all-products/ShowAllProductsSection";
 import PolicySection from "@/components/home/policies/PolicySection";
 
 type PageProps = {
@@ -56,7 +56,7 @@ export default async function CategoryPage({
 
       <CategoryTrendingProductsSection />
       <CategoryProductsSection />
-      <PolicySection/>
+      <PolicySection />
     </>
   );
 }

@@ -10,7 +10,12 @@
     "mrp": 899,
     "rating": 4.3,
     "reviewCount": 1241,
-    "images": ["1.png"],
+    "images": [
+      "/products/fm-001/1.png",
+      "/products/fm-001/2.png",
+      "/products/fm-001/3.png",
+      "/products/fm-001/4.png"
+    ],
     "specifications": {
       "weight": "5kg",
       "organic": true,
@@ -31,7 +36,12 @@
     "mrp": 260,
     "rating": 4.4,
     "reviewCount": 860,
-    "images": ["2.png"],
+    "images": [
+      "/products/fm-002/1.png",
+      "/products/fm-002/2.png",
+      "/products/fm-002/3.png",
+      "/products/fm-002/4.png"
+    ],
     "specifications": {
       "volume": "1L",
       "coldPressed": true
@@ -51,7 +61,12 @@
     "mrp": 620,
     "rating": 4.5,
     "reviewCount": 2100,
-    "images": ["1.png"],
+    "images": [
+      "/products/fm-003/1.png",
+      "/products/fm-003/2.png",
+      "/products/fm-003/3.png",
+      "/products/fm-003/4.png"
+    ],
     "specifications": {
       "weight": "10kg",
       "fiberRich": true
@@ -71,7 +86,12 @@
     "mrp": 360,
     "rating": 4.2,
     "reviewCount": 640,
-    "images": ["2.png"],
+    "images": [
+      "/products/fm-004/1.png",
+      "/products/fm-004/2.png",
+      "/products/fm-004/3.png",
+      "/products/fm-004/4.png"
+    ],
     "specifications": {
       "weight": "500g",
       "organic": true
@@ -91,7 +111,12 @@
     "mrp": 520,
     "rating": 4.6,
     "reviewCount": 1320,
-    "images": ["1.png"],
+    "images": [
+      "/products/fm-005/1.png",
+      "/products/fm-005/2.png",
+      "/products/fm-005/3.png",
+      "/products/fm-005/4.png"
+    ],
     "specifications": {
       "weight": "200g",
       "caffeine": "Medium"

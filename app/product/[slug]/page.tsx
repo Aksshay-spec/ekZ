@@ -1,26 +1,38 @@
 //app/product/[slug]/page.tsx
-export default async function ProductDetailPage({ params }: any) {
+import { notFound } from "next/navigation";
+import ProductGallery from "@/components/product-detail/ProductGallery";
+import ProductInfo from "@/components/product-detail/ProductInfo";
+
+export default async function ProductDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  // ✅ IMPORTANT FIX: unwrap params
+  const { slug } = await params;
+
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${params.slug}`,
-    { cache: "force-cache" }
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${slug}`,
+    { cache: "no-store" }
   );
 
-  if (!res.ok) throw new Error("Product not found");
+  if (!res.ok) {
+    notFound();
+  }
 
   const product = await res.json();
 
   return (
     <section className="container mx-auto px-4 py-6">
-      <h1 className="text-2xl font-semibold">{product.title}</h1>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* LEFT - IMAGE GALLERY (STICKY) */}
+        <div className="lg:sticky lg:top-24 h-fit">
+          <ProductGallery images={product.images} />
+        </div>
 
-      <img
-        src={product.images[0]}
-        className="max-w-md my-6"
-      />
-
-      <pre className="bg-gray-100 p-4 rounded">
-        {JSON.stringify(product.specifications, null, 2)}
-      </pre>
+        {/* RIGHT - PRODUCT DETAILS */}
+        <ProductInfo product={product} />
+      </div>
     </section>
   );
 }

@@ -8,10 +8,12 @@ export default function CategoryTrendingProductItem({
 }: {
   product: Product;
 }) {
+  // const imageSrc =
+  //   product.images?.length > 0
+  //     ? `/images/${product.images[0]}`
+  //     : "/images/placeholder.png";
   const imageSrc =
-    product.images?.length > 0
-      ? `/images/${product.images[0]}`
-      : "/images/placeholder.png";
+    product.images?.[0] ?? "/images/products/placeholder.png";
 
   return (
     <Link href={`/product/${product.slug}`}>
