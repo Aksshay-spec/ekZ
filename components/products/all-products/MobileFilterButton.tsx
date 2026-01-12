@@ -1,4 +1,4 @@
-// components/products/MobileFilterButton.tsx
+// components/products/all-products/MobileFilterButton.tsx
 
 import { SlidersHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";

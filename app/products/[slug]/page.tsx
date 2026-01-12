@@ -1,4 +1,4 @@
-//app/product/[slug]/page.tsx
+//app/products/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import ProductDetailSection from "@/components/products/product-detail/ProductDetailSection";
 
@@ -7,7 +7,6 @@ export default async function ProductDetailPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  // ✅ unwrap params
   const { slug } = await params;
 
   const res = await fetch(

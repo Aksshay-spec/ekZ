@@ -1,4 +1,4 @@
-//components/home/category-trending-products/CategoryTrendingProductsCarousel.tsx
+//components/products/category-trending-products/CategoryTrendingProductsCarousel.tsx
 "use client";
 
 import * as React from "react";

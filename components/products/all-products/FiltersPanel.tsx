@@ -1,4 +1,4 @@
-// components/products/FiltersPanel.tsx
+// components/products/all-products/FiltersPanel.tsx
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";

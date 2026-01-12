@@ -1,4 +1,4 @@
-// components/products/MobileFiltersDrawer.tsx
+// components/products/all-products/MobileFiltersDrawer.tsx
 
 import {
   Sheet,

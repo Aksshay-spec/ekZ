@@ -1,4 +1,4 @@
-//components/products/ShowAllProductsSection.tsx
+//components/products/all-products/ShowAllProductsSection.tsx
 import SortDropdown from "@/components/products/all-products/sort-dropdown";
 import MobileFiltersWrapper from "@/components/products/all-products/MobileFiltersWrapper";
 import FiltersPanel from "@/components/products/all-products/FiltersPanel";

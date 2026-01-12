@@ -1,4 +1,4 @@
-// components/products/ProductCard.tsx
+// components/products/all-products/ProductCard.tsx
 
 import Image from "next/image";
 import Link from "next/link";
@@ -27,17 +27,14 @@ export default function ProductCard({ product }: Props) {
       ? Math.round(((product.mrp - product.price) / product.mrp) * 100)
       : null;
 
-  // const imageSrc = product.images?.[0]
-  //   ? `/images/products/${product.images[0]}`
-  //   : "/images/products/placeholder.png";
-
-    const imageSrc =
+  const imageSrc =
     product.images?.[0] ?? "/images/products/placeholder.png";
 
   return (
-    <Card className="flex flex-col gap-2 py-4 hover:shadow-md transition">
-      <Link href={`/product/${product.slug}`}>
-        <CardContent className="px-2 flex-1">
+    <Card className="flex flex-col hover:shadow-md transition">
+      <Link href={`/products/${product.slug}`} className="flex flex-1 flex-col">
+        <CardContent className="flex flex-1 flex-col px-3 pt-4">
+          {/* Image */}
           <div className="relative aspect-square mb-3">
             <Image
               src={imageSrc}
@@ -48,12 +45,15 @@ export default function ProductCard({ product }: Props) {
             />
           </div>
 
-          <h3 className="text-sm font-medium line-clamp-2 mb-1">
+          {/* Title (fixed height) */}
+          <h3 className="text-sm font-medium line-clamp-2 min-h-[2.5rem] mb-2">
             {product.title}
           </h3>
 
-          <div className="flex items-center gap-4 text-sm">
+          {/* Price */}
+          <div className="flex items-center gap-2 text-sm">
             <span className="font-semibold">₹{product.price}</span>
+
             {discount && (
               <>
                 <span className="line-through text-muted-foreground">
@@ -64,13 +64,15 @@ export default function ProductCard({ product }: Props) {
             )}
           </div>
 
+          {/* Rating */}
           <div className="text-xs text-muted-foreground mt-1">
             ⭐ {product.rating}
           </div>
         </CardContent>
       </Link>
 
-      <CardFooter className="flex justify-between px-4 pt-0">
+      {/* Footer pinned to bottom */}
+      <CardFooter className="mt-auto flex justify-between px-4 pb-4">
         <Button
           variant="secondary"
           className="bg-aqua-green-500 text-black rounded-full hover:bg-aqua-green-400"

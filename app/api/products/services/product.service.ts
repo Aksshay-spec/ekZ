@@ -3,14 +3,16 @@ import type { ProductCategory } from "../types/product.types";
 import { PRODUCT_CATEGORIES } from "../types/product.types";
 import type { ProductRepository } from "../repositories/interfaces/ProductRepository";
 import { ProductFilter } from "../filters/product.filter";
-import { ProductSorter } from "../sorters/product.sorter";
+import { ProductSorter, type ProductSortKey } from "../sorters/product.sorter";
 import { ProductPaginator } from "../pagination/product.paginator";
 
 export class ProductService {
   constructor(private repo: ProductRepository) {}
 
   async getProductList(category: ProductCategory, params: URLSearchParams) {
-    const sort = params.get("sort") ?? undefined;
+    const sortParam = params.get("sort");
+    const sort = sortParam as ProductSortKey | undefined;
+
     const page = Number(params.get("page") ?? 1);
     const limit = Number(params.get("limit") ?? 12);
 
@@ -30,7 +32,6 @@ export class ProductService {
     return this.repo.getProductsByCategory(category);
   }
 
-  /* ✅ FIXED */
   async getAllProducts() {
     const productGroups = await Promise.all(
       PRODUCT_CATEGORIES.map((category) =>

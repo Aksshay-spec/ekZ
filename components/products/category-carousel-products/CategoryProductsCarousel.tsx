@@ -1,4 +1,4 @@
-// components/home/category-products/CategoryProductsCarousel.tsx
+// components/products/category-carousel-products/CategoryProductsCarousel.tsx
 "use client";
 
 import { useRef } from "react";

@@ -1,4 +1,4 @@
-// components/products/sort-dropdown.tsx
+// components/products/all-products/sort-dropdown.tsx
 "use client"
 
 import { useRouter, useSearchParams } from "next/navigation"

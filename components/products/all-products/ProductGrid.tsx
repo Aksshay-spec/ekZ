@@ -1,4 +1,4 @@
-// components/products/ProductGrid.tsx
+// components/products/all-products/ProductGrid.tsx
 
 import ProductCard from "./ProductCard";
 

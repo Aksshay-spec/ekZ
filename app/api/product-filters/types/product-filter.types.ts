@@ -1,10 +1,14 @@
-//app/api/product-filters/types/product-filter.types.ts
+// app/api/product-filters/types/product-filter.types.ts
 export type ProductFilterMetadata = {
-  brands: string[];
   colors: string[];
+  wattages?: string[];
+  weights?: string[];
+
   priceRange: {
     min: number;
     max: number;
   };
+
   ratings: number[];
 };
+

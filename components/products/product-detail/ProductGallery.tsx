@@ -1,3 +1,4 @@
+//components/products/product-detail/ProductGallery.tsx
 "use client";
 
 import { useState, useRef } from "react";

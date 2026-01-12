@@ -3,6 +3,7 @@
     "id": "fm-001",
     "slug": "premium-basmati-rice-5kg",
     "title": "Premium Basmati Rice 5kg",
+    "description": "Premium basmati rice sourced from selected farms...",
     "category": "FMCG",
     "subCategory": "Groceries",
     "brand": "Saptaar Select",
@@ -10,6 +11,7 @@
     "mrp": 899,
     "rating": 4.3,
     "reviewCount": 1241,
+    "weights": ["5kg", "10kg", "20kg"],
     "images": [
       "/products/fm-001/1.png",
       "/products/fm-001/2.png",
@@ -17,7 +19,6 @@
       "/products/fm-001/4.png"
     ],
     "specifications": {
-      "weight": "5kg",
       "organic": true,
       "shelfLife": "12 months"
     },
@@ -25,10 +26,12 @@
     "stock": { "available": true, "quantity": 320 },
     "createdAt": "2025-01-12"
   },
+
   {
     "id": "fm-002",
     "slug": "cold-pressed-mustard-oil",
     "title": "Cold Pressed Mustard Oil 1L",
+    "description": "Cold pressed mustard oil...",
     "category": "FMCG",
     "subCategory": "Edible Oils",
     "brand": "Dhara",
@@ -36,6 +39,7 @@
     "mrp": 260,
     "rating": 4.4,
     "reviewCount": 860,
+    "weights": ["1L"],
     "images": [
       "/products/fm-002/1.png",
       "/products/fm-002/2.png",
@@ -43,17 +47,18 @@
       "/products/fm-002/4.png"
     ],
     "specifications": {
-      "volume": "1L",
       "coldPressed": true
     },
     "tags": ["Oil", "Healthy"],
     "stock": { "available": true, "quantity": 450 },
     "createdAt": "2025-01-11"
   },
+
   {
     "id": "fm-003",
     "slug": "whole-wheat-atta-10kg",
     "title": "Whole Wheat Atta 10kg",
+    "description": "Whole wheat atta...",
     "category": "FMCG",
     "subCategory": "Groceries",
     "brand": "Aashirvaad",
@@ -61,6 +66,7 @@
     "mrp": 620,
     "rating": 4.5,
     "reviewCount": 2100,
+    "weights": ["10kg"],
     "images": [
       "/products/fm-003/1.png",
       "/products/fm-003/2.png",
@@ -68,17 +74,18 @@
       "/products/fm-003/4.png"
     ],
     "specifications": {
-      "weight": "10kg",
       "fiberRich": true
     },
     "tags": ["Atta", "Daily Use"],
     "stock": { "available": true, "quantity": 500 },
     "createdAt": "2025-01-10"
   },
+
   {
     "id": "fm-004",
     "slug": "organic-honey-500g",
     "title": "Organic Forest Honey 500g",
+    "description": "Pure organic forest honey...",
     "category": "FMCG",
     "subCategory": "Health",
     "brand": "Patanjali",
@@ -86,6 +93,7 @@
     "mrp": 360,
     "rating": 4.2,
     "reviewCount": 640,
+    "weights": ["500g"],
     "images": [
       "/products/fm-004/1.png",
       "/products/fm-004/2.png",
@@ -93,17 +101,18 @@
       "/products/fm-004/4.png"
     ],
     "specifications": {
-      "weight": "500g",
       "organic": true
     },
     "tags": ["Honey", "Organic"],
     "stock": { "available": true, "quantity": 210 },
     "createdAt": "2025-01-09"
   },
+
   {
     "id": "fm-005",
     "slug": "instant-coffee-200g",
     "title": "Instant Coffee Powder 200g",
+    "description": "Premium instant coffee powder...",
     "category": "FMCG",
     "subCategory": "Beverages",
     "brand": "Nescafe",
@@ -111,6 +120,7 @@
     "mrp": 520,
     "rating": 4.6,
     "reviewCount": 1320,
+    "weights": ["200g"],
     "images": [
       "/products/fm-005/1.png",
       "/products/fm-005/2.png",
@@ -118,7 +128,6 @@
       "/products/fm-005/4.png"
     ],
     "specifications": {
-      "weight": "200g",
       "caffeine": "Medium"
     },
     "tags": ["Coffee"],

@@ -1,4 +1,4 @@
-// components/home/category-products/CategoryProductCard.tsx
+// components/products/category-carousel-products/CategoryProductCard.tsx
 
 import CarouselProductCard from "@/components/products/category-carousel-products/CarouselProductCard";
 

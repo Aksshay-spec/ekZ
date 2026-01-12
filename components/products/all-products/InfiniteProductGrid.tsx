@@ -1,4 +1,4 @@
-// components/products/InfiniteProductGrid.tsx
+// components/products/all-products/InfiniteProductGrid.tsx
 "use client";
 
 import { useEffect, useRef, useState } from "react";

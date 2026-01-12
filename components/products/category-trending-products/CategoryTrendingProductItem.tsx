@@ -1,4 +1,4 @@
-//components/home/category-trending-products/CategoryTrendingProductItem.tsx
+//components/products/category-trending-products/CategoryTrendingProductItem.tsx
 import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/app/api/products/types/product.types";
@@ -16,7 +16,7 @@ export default function CategoryTrendingProductItem({
     product.images?.[0] ?? "/images/products/placeholder.png";
 
   return (
-    <Link href={`/product/${product.slug}`}>
+    <Link href={`/products/${product.slug}`}>
       <div
         className="w-18 h-18 rounded-full flex items-center justify-center overflow-hidden
                    border-2 border-black border-dashed cursor-pointer

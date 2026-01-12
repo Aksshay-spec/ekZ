@@ -1,4 +1,4 @@
-//components/home/category-trending-products/CategoryTrendingProductsSection.tsx
+//components/products/category-trending-products/CategoryTrendingProductsSection.tsx
 import { ProductRepositoryFactory } from "@/app/api/products/repositories/factory/ProductRepositoryFactory";
 import { ProductService } from "@/app/api/products/services/product.service";
 

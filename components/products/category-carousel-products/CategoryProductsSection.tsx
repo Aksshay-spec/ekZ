@@ -1,4 +1,4 @@
-// components/home/category-products/CategoryProductsSection.tsx
+// components/products/category-carousel-products/CategoryProductsSection.tsx
 
 import SectionHeader from "@/components/common/SectionHeader";
 import CategoryProductsCarousel from "./CategoryProductsCarousel";

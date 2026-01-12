@@ -1,18 +1,14 @@
-// components/careers/career-accordion/CareerAccordionSection.tsx
-import SectionHeader from "@/components/common/SectionHeader"
-import CareerAccordionClient from "./CareerAccordionClient"
+//components/careers/career-accordion/CareerAccordionSection.tsx
+import { CareerAccordionRepositoryFactory } from "@/app/api/career-accordion/repositories/factory/CareerAccordionRepositoryFactory";
+import { CareerAccordionService } from "@/app/api/career-accordion/services/careerAccordion.service";
 
-export default function CareerAccordionSection() {
-  return (
-    <section className="mt-24 mb-20 px-4">
-      <div className="mx-auto max-w-3xl">
-        <SectionHeader
-          title="Why Choose Us"
-          subtitle="Build more than a career. Build impact."
-        />
+import CareerAccordion from "./CareerAccordion";
 
-        <CareerAccordionClient />
-      </div>
-    </section>
-  )
+export default async function CareerAccordionWrapper() {
+  const repo = CareerAccordionRepositoryFactory.getInstance();
+  const service = new CareerAccordionService(repo);
+
+  const items = await service.getItems();
+
+  return <CareerAccordion items={items} />;
 }

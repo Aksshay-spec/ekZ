@@ -3,6 +3,7 @@
     "id": "el-001",
     "slug": "22kw-ev-charger-havells",
     "title": "22 kW MotrON GT EV Charger",
+    "description": "The 22 kW MotrON GT EV Charger is a high-performance fast charging solution designed for commercial and industrial electric vehicle infrastructure. It supports WiFi and GSM connectivity for smart monitoring, remote diagnostics, and OCPP-based backend integration. Built to IEC 61851 standards, it ensures safe, reliable, and efficient charging for public stations, fleet depots, and commercial facilities.",
     "category": "SAPTAAR_ELECTRIC",
     "subCategory": "EV Chargers",
     "brand": "Havells",
@@ -11,12 +12,8 @@
     "rating": 4.5,
     "reviewCount": 312,
     "colors": ["Silver", "Black"],
-    "images": [
-      "/products/el-001/1.png",
-      "/products/el-001/2.png",
-      "/products/el-001/3.png",
-      "/products/el-001/4.png"
-    ],
+    "wattages": ["22kW"],
+    "images": ["/products/el-001/1.png", "/products/el-001/2.png", "/products/el-001/3.png", "/products/el-001/4.png"],
     "specifications": {
       "power": "22kW",
       "voltageRange": "340V-460V",
@@ -33,6 +30,7 @@
     "id": "el-002",
     "slug": "7kw-home-ev-charger",
     "title": "7 kW Home EV Charger",
+    "description": "A compact and efficient 7 kW home EV charger designed for residential electric vehicle charging. It offers safe and reliable performance with WiFi connectivity, enabling smart energy monitoring and controlled charging. Ideal for individual homeowners seeking a convenient and cost-effective EV charging solution.",
     "category": "SAPTAAR_ELECTRIC",
     "subCategory": "EV Chargers",
     "brand": "Tata Power",
@@ -41,12 +39,8 @@
     "rating": 4.2,
     "reviewCount": 198,
     "colors": ["White"],
-    "images": [
-      "/products/el-002/1.png",
-      "/products/el-002/2.png",
-      "/products/el-002/3.png",
-      "/products/el-002/4.png"
-    ],
+    "wattages": ["7kW"],
+    "images": ["/products/el-002/1.png", "/products/el-002/2.png", "/products/el-002/3.png", "/products/el-002/4.png"],
     "specifications": {
       "power": "7kW",
       "voltageRange": "220V",
@@ -63,6 +57,7 @@
     "id": "el-003",
     "slug": "industrial-control-panel",
     "title": "Industrial Electrical Control Panel",
+    "description": "This industrial electrical control panel is engineered for safe power distribution and automation control in factories and industrial plants. Constructed with durable materials and IP-rated protection, it ensures operational safety, long service life, and compliance with industrial electrical standards.",
     "category": "SAPTAAR_ELECTRIC",
     "subCategory": "Panels",
     "brand": "L&T",
@@ -71,12 +66,7 @@
     "rating": 4.6,
     "reviewCount": 86,
     "colors": ["Gray"],
-    "images": [
-      "/products/el-003/1.png",
-      "/products/el-003/2.png",
-      "/products/el-003/3.png",
-      "/products/el-003/4.png"
-    ],
+    "images": ["/products/el-003/1.png", "/products/el-003/2.png", "/products/el-003/3.png", "/products/el-003/4.png"],
     "specifications": {
       "protection": "IP65",
       "material": "Mild Steel",
@@ -91,6 +81,7 @@
     "id": "el-004",
     "slug": "solar-inverter-5kw",
     "title": "5 kW Solar Hybrid Inverter",
+    "description": "A high-efficiency 5 kW solar hybrid inverter designed for residential and small commercial solar power systems. It supports battery backup, seamless grid interaction, and intelligent power management to ensure uninterrupted energy supply and optimal solar utilization.",
     "category": "SAPTAAR_ELECTRIC",
     "subCategory": "Inverters",
     "brand": "Luminous",
@@ -99,12 +90,8 @@
     "rating": 4.4,
     "reviewCount": 245,
     "colors": ["White"],
-    "images": [
-      "/products/el-004/1.png",
-      "/products/el-004/2.png",
-      "/products/el-004/3.png",
-      "/products/el-004/4.png"
-    ],
+    "wattages": ["5kW"],
+    "images": ["/products/el-004/1.png", "/products/el-004/2.png", "/products/el-004/3.png", "/products/el-004/4.png"],
     "specifications": {
       "power": "5kW",
       "batterySupport": true,
@@ -119,6 +106,7 @@
     "id": "el-005",
     "slug": "industrial-led-highbay",
     "title": "Industrial LED Highbay Light",
+    "description": "Industrial-grade LED highbay light designed for warehouses, factories, and large indoor spaces. It delivers high lumen output with excellent energy efficiency, long operational life, and reduced maintenance costs.",
     "category": "SAPTAAR_ELECTRIC",
     "subCategory": "Lighting",
     "brand": "Philips",
@@ -127,12 +115,8 @@
     "rating": 4.3,
     "reviewCount": 410,
     "colors": ["Black"],
-    "images": [
-      "/products/el-005/1.png",
-      "/products/el-005/2.png",
-      "/products/el-005/3.png",
-      "/products/el-005/4.png"
-    ],
+    "wattages": ["100W", "150W"],
+    "images": ["/products/el-005/1.png", "/products/el-005/2.png", "/products/el-005/3.png", "/products/el-005/4.png"],
     "specifications": {
       "wattage": "150W",
       "lumens": "18000",
@@ -155,17 +139,8 @@
     "rating": 4.7,
     "reviewCount": 980,
     "colors": ["White"],
-    "images": [
-      "/products/el-006/1.png",
-      "/products/el-006/2.png",
-      "/products/el-006/3.png",
-      "/products/el-006/4.png"
-    ],
-    "specifications": {
-      "current": "32A",
-      "curve": "C",
-      "certification": "IEC"
-    },
+    "images": ["/products/el-006/1.png", "/products/el-006/2.png", "/products/el-006/3.png", "/products/el-006/4.png"],
+    "specifications": { "current": "32A", "curve": "C", "certification": "IEC" },
     "tags": ["MCB", "Safety"],
     "stock": { "available": true, "quantity": 500 },
     "createdAt": "2025-01-05"
@@ -183,17 +158,8 @@
     "rating": 4.1,
     "reviewCount": 210,
     "colors": ["White"],
-    "images": [
-      "/products/el-007/1.png",
-      "/products/el-007/2.png",
-      "/products/el-007/3.png",
-      "/products/el-007/4.png"
-    ],
-    "specifications": {
-      "phase": "Single",
-      "communication": "RF",
-      "accuracy": "Class 1"
-    },
+    "images": ["/products/el-007/1.png", "/products/el-007/2.png", "/products/el-007/3.png", "/products/el-007/4.png"],
+    "specifications": { "phase": "Single", "communication": "RF", "accuracy": "Class 1" },
     "tags": ["Meter", "Smart"],
     "stock": { "available": true, "quantity": 200 },
     "createdAt": "2025-01-04"
@@ -211,17 +177,8 @@
     "rating": 4.6,
     "reviewCount": 540,
     "colors": ["Black"],
-    "images": [
-      "/products/el-008/1.png",
-      "/products/el-008/2.png",
-      "/products/el-008/3.png",
-      "/products/el-008/4.png"
-    ],
-    "specifications": {
-      "core": "4 Core",
-      "material": "Copper",
-      "insulation": "PVC"
-    },
+    "images": ["/products/el-008/1.png", "/products/el-008/2.png", "/products/el-008/3.png", "/products/el-008/4.png"],
+    "specifications": { "core": "4 Core", "material": "Copper", "insulation": "PVC" },
     "tags": ["Cable", "Industrial"],
     "stock": { "available": true, "quantity": 90 },
     "createdAt": "2025-01-03"
@@ -239,17 +196,9 @@
     "rating": 4.5,
     "reviewCount": 375,
     "colors": ["Blue"],
-    "images": [
-      "/products/el-009/1.png",
-      "/products/el-009/2.png",
-      "/products/el-009/3.png",
-      "/products/el-009/4.png"
-    ],
-    "specifications": {
-      "power": "550W",
-      "cellType": "Mono PERC",
-      "efficiency": "21%"
-    },
+    "wattages": ["550W"],
+    "images": ["/products/el-009/1.png", "/products/el-009/2.png", "/products/el-009/3.png", "/products/el-009/4.png"],
+    "specifications": { "power": "550W", "cellType": "Mono PERC", "efficiency": "21%" },
     "tags": ["Solar", "Panel"],
     "stock": { "available": true, "quantity": 150 },
     "createdAt": "2025-01-02"
@@ -267,17 +216,9 @@
     "rating": 4.6,
     "reviewCount": 98,
     "colors": ["Black"],
-    "images": [
-      "/products/el-010/1.png",
-      "/products/el-010/2.png",
-      "/products/el-010/3.png",
-      "/products/el-010/4.png"
-    ],
-    "specifications": {
-      "capacity": "10 kVA",
-      "backup": "2 Hours",
-      "phase": "Three"
-    },
+    "wattages": ["10kVA"],
+    "images": ["/products/el-010/1.png", "/products/el-010/2.png", "/products/el-010/3.png", "/products/el-010/4.png"],
+    "specifications": { "capacity": "10 kVA", "backup": "2 Hours", "phase": "Three" },
     "tags": ["UPS", "Industrial"],
     "stock": { "available": true, "quantity": 8 },
     "createdAt": "2025-01-01"
@@ -295,16 +236,9 @@
     "rating": 4.2,
     "reviewCount": 610,
     "colors": ["Gray"],
-    "images": [
-      "/products/el-011/1.png",
-      "/products/el-011/2.png",
-      "/products/el-011/3.png",
-      "/products/el-011/4.png"
-    ],
-    "specifications": {
-      "wattage": "120W",
-      "ipRating": "IP66"
-    },
+    "wattages": ["90W", "120W"],
+    "images": ["/products/el-011/1.png", "/products/el-011/2.png", "/products/el-011/3.png", "/products/el-011/4.png"],
+    "specifications": { "wattage": "120W", "ipRating": "IP66" },
     "tags": ["LED", "Outdoor"],
     "stock": { "available": true, "quantity": 300 },
     "createdAt": "2024-12-31"
@@ -322,16 +256,9 @@
     "rating": 4.7,
     "reviewCount": 142,
     "colors": ["Gray"],
-    "images": [
-      "/products/el-012/1.png",
-      "/products/el-012/2.png",
-      "/products/el-012/3.png",
-      "/products/el-012/4.png"
-    ],
-    "specifications": {
-      "powerRange": "7.5kW",
-      "control": "Vector Control"
-    },
+    "wattages": ["7.5kW"],
+    "images": ["/products/el-012/1.png", "/products/el-012/2.png", "/products/el-012/3.png", "/products/el-012/4.png"],
+    "specifications": { "powerRange": "7.5kW", "control": "Vector Control" },
     "tags": ["VFD", "Automation"],
     "stock": { "available": true, "quantity": 18 },
     "createdAt": "2024-12-30"
@@ -349,16 +276,8 @@
     "rating": 4.8,
     "reviewCount": 64,
     "colors": ["Black"],
-    "images": [
-      "/products/el-013/1.png",
-      "/products/el-013/2.png",
-      "/products/el-013/3.png",
-      "/products/el-013/4.png"
-    ],
-    "specifications": {
-      "current": "1600A",
-      "breakingCapacity": "65kA"
-    },
+    "images": ["/products/el-013/1.png", "/products/el-013/2.png", "/products/el-013/3.png", "/products/el-013/4.png"],
+    "specifications": { "current": "1600A", "breakingCapacity": "65kA" },
     "tags": ["ACB", "Safety"],
     "stock": { "available": true, "quantity": 6 },
     "createdAt": "2024-12-29"
@@ -376,16 +295,8 @@
     "rating": 4.3,
     "reviewCount": 720,
     "colors": ["Black", "Gold"],
-    "images": [
-      "/products/el-014/1.png",
-      "/products/el-014/2.png",
-      "/products/el-014/3.png",
-      "/products/el-014/4.png"
-    ],
-    "specifications": {
-      "connectivity": "WiFi",
-      "voiceSupport": true
-    },
+    "images": ["/products/el-014/1.png", "/products/el-014/2.png", "/products/el-014/3.png", "/products/el-014/4.png"],
+    "specifications": { "connectivity": "WiFi", "voiceSupport": true },
     "tags": ["Smart", "Home"],
     "stock": { "available": true, "quantity": 260 },
     "createdAt": "2024-12-28"
@@ -403,16 +314,9 @@
     "rating": 4.6,
     "reviewCount": 51,
     "colors": ["Blue"],
-    "images": [
-      "/products/el-015/1.png",
-      "/products/el-015/2.png",
-      "/products/el-015/3.png",
-      "/products/el-015/4.png"
-    ],
-    "specifications": {
-      "capacity": "100 kVA",
-      "cooling": "ONAN"
-    },
+    "wattages": ["100kVA"],
+    "images": ["/products/el-015/1.png", "/products/el-015/2.png", "/products/el-015/3.png", "/products/el-015/4.png"],
+    "specifications": { "capacity": "100 kVA", "cooling": "ONAN" },
     "tags": ["Transformer", "Industrial"],
     "stock": { "available": true, "quantity": 5 },
     "createdAt": "2024-12-27"
@@ -430,16 +334,8 @@
     "rating": 4.4,
     "reviewCount": 330,
     "colors": ["Copper"],
-    "images": [
-      "/products/el-016/1.png",
-      "/products/el-016/2.png",
-      "/products/el-016/3.png",
-      "/products/el-016/4.png"
-    ],
-    "specifications": {
-      "length": "3 Meter",
-      "material": "Copper Bonded Steel"
-    },
+    "images": ["/products/el-016/1.png", "/products/el-016/2.png", "/products/el-016/3.png", "/products/el-016/4.png"],
+    "specifications": { "length": "3 Meter", "material": "Copper Bonded Steel" },
     "tags": ["Earthing", "Safety"],
     "stock": { "available": true, "quantity": 180 },
     "createdAt": "2024-12-26"

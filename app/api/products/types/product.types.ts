@@ -22,7 +22,11 @@ export type Product = {
   reviewCount: number;
 
   images: string[];
+
+  // ✅ VARIANTS (OPTIONAL, CATEGORY DEPENDENT)
   colors?: string[];
+  wattages?: string[];
+  weights?: string[];
 
   specifications: Record<string, string | number | boolean>;
 

@@ -1,4 +1,4 @@
-// components/products/CarouselProductCard.tsx
+// components/products/category-carousel-products/CarouselProductCard.tsx
 
 import Image from "next/image";
 import Link from "next/link";
@@ -33,7 +33,7 @@ export default function CarouselProductCard({ product }: Props) {
 
   return (
     <Card className="hover:shadow-md transition rounded-2xl">
-      <Link href={`/product/${product.slug}`}>
+      <Link href={`/products/${product.slug}`}>
         <CardContent className="p-3">
           <div className="relative aspect-square mb-2 bg-gray-50 rounded-xl">
             <Image
