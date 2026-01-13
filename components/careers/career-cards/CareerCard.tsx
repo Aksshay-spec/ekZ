@@ -1,10 +1,9 @@
 // components/careers/career-cards/CareerCard.tsx
 import Image from "next/image";
+import Link from "next/link";
 import type { CareerCardItem } from "@/app/api/career-cards/types/careerCards.types";
 import { Button } from "@/components/ui/button";
-
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import Link from "next/link";
 
 type Props = {
   item: CareerCardItem;

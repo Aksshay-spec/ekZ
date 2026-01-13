@@ -1,6 +1,8 @@
 "use client";
 
+import Autoplay from "embla-carousel-autoplay";
 import React from "react";
+import type { Slide } from "@/app/api/home-slider/types/homeSlider.types";
 import {
   Carousel,
   CarouselContent,
@@ -8,11 +10,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
-import Autoplay from "embla-carousel-autoplay";
-import SlideItem from "./SlideItem";
-import type { Slide } from "@/app/api/home-slider/types/homeSlider.types";
 import CarouselIndicators from "./CarouselIndicators";
+import SlideItem from "./SlideItem";
 
 export default function HomeSlider({ slides }: { slides: Slide[] }) {
   const [selectedIndex, setSelectedIndex] = React.useState(0);

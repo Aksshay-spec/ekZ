@@ -2,8 +2,8 @@
 
 import { OurNewsRepositoryFactory } from "@/app/api/our-news/repositories/factory/OurNewsRepositoryFactory";
 import { OurNewsService } from "@/app/api/our-news/services/ourNews.service";
-import OurNewsCarousel from "./OurNewsCarousel";
 import SectionHeader from "@/components/common/SectionHeader";
+import OurNewsCarousel from "./OurNewsCarousel";
 
 export default async function OurNewsSection() {
   const repo = OurNewsRepositoryFactory.getInstance();

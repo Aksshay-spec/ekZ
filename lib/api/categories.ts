@@ -3,7 +3,7 @@
 export async function getCategories() {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/categories`,
-    { cache: "force-cache" } // categories rarely change
+    { cache: "force-cache" }, // categories rarely change
   );
 
   if (!res.ok) {

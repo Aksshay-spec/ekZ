@@ -16,7 +16,7 @@ export async function GET() {
     console.error("sku-product GET error:", error);
     return NextResponse.json(
       { error: "Failed to load SKU products" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

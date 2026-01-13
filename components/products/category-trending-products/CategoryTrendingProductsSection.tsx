@@ -1,9 +1,8 @@
 //components/products/category-trending-products/CategoryTrendingProductsSection.tsx
 import { ProductRepositoryFactory } from "@/app/api/products/repositories/factory/ProductRepositoryFactory";
 import { ProductService } from "@/app/api/products/services/product.service";
-
-import CategoryTrendingProductsCarousel from "./CategoryTrendingProductsCarousel";
 import SectionHeader from "@/components/common/SectionHeader";
+import CategoryTrendingProductsCarousel from "./CategoryTrendingProductsCarousel";
 
 export default async function CategoryTrendingProductsSection() {
   const repo = ProductRepositoryFactory.getInstance();

@@ -1,5 +1,5 @@
 //app/api/captcha/manual/route.ts
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 import { ManualCaptchaService } from "@/lib/captcha/manual-captcha.service";
 
 export async function GET() {

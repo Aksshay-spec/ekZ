@@ -8,10 +8,7 @@ export type ProductSortKey =
   | "newest";
 
 export class ProductSorter {
-  static apply(
-    products: Product[],
-    sort?: ProductSortKey
-  ): Product[] {
+  static apply(products: Product[], sort?: ProductSortKey): Product[] {
     if (!sort) return products;
 
     const sorted = [...products];
@@ -29,8 +26,7 @@ export class ProductSorter {
       case "newest":
         return sorted.sort(
           (a, b) =>
-            new Date(b.createdAt).getTime() -
-            new Date(a.createdAt).getTime()
+            new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
         );
 
       default:

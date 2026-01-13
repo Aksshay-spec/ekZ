@@ -1,10 +1,10 @@
 // components/home/our-journey/OurJourneyTimelines.tsx
 "use client";
 
-import TimelineList from "./TimelineList";
-import { ShootingStars } from "@/components/ui/shadcn-io/shooting-stars/index";
 import type { TimelineItemType } from "@/app/api/our-journey/types/journey.types";
+import { ShootingStars } from "@/components/ui/shadcn-io/shooting-stars/index";
 import styles from "./OurJourneyTimelines.module.css";
+import TimelineList from "./TimelineList";
 export default function OurJourneyTimelines({
   timelineItems,
 }: {

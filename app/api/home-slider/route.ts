@@ -18,7 +18,7 @@ export async function GET() {
     console.error("home-slider GET error:", error);
     return NextResponse.json(
       { error: "Failed to load slides" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

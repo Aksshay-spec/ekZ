@@ -1,8 +1,8 @@
 // components/products/category-carousel-products/CategoryProductsCarousel.tsx
 "use client";
 
-import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -20,7 +20,7 @@ export default function CategoryProductsCarousel({ products }: Props) {
       delay: 2500,
       stopOnInteraction: false,
       stopOnMouseEnter: true, // ✅ important
-    })
+    }),
   );
 
   return (

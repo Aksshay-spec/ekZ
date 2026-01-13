@@ -1,5 +1,5 @@
 // app/api/captcha/recaptcha/route.ts
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 import { RecaptchaService } from "@/lib/captcha/recaptcha.service";
 
 export async function POST(req: NextRequest) {

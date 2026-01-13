@@ -1,7 +1,7 @@
 // app/api/testimonials/services/testimonial.service.ts
 
-import type { Testimonial } from "@/app/api/testimonials/types/testimonial.types";
 import type { TestimonialRepository } from "@/app/api/testimonials/repositories/interfaces/TestimonialRepository";
+import type { Testimonial } from "@/app/api/testimonials/types/testimonial.types";
 
 export class TestimonialService {
   constructor(private repo: TestimonialRepository) {}

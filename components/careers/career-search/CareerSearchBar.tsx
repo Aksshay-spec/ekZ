@@ -1,10 +1,9 @@
 // components/careers/career-search/CareerSearchSection.tsx
 import { Search } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Form, FormField, FormItem, FormControl } from "@/components/ui/form";
-
 import type { FC } from "react";
 import type { UseFormReturn } from "react-hook-form";
+import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 
 type CareerSearchFormValues = {
   query: string;

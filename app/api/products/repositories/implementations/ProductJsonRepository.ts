@@ -19,9 +19,7 @@ const electricData = electricJson as unknown as RawProduct[];
 const fmcgData = fmcgJson as unknown as RawProduct[];
 
 export class ProductJsonRepository implements ProductRepository {
-  async getProductsByCategory(
-    category: ProductCategory
-  ): Promise<Product[]> {
+  async getProductsByCategory(category: ProductCategory): Promise<Product[]> {
     if (category === "SAPTAAR_ELECTRIC") {
       return electricData.map(mapRawProductToProduct);
     }
@@ -35,7 +33,7 @@ export class ProductJsonRepository implements ProductRepository {
 
   async getProductBySlug(slug: string): Promise<Product | null> {
     const allProducts = [...electricData, ...fmcgData].map(
-      mapRawProductToProduct
+      mapRawProductToProduct,
     );
 
     return allProducts.find((p) => p.slug === slug) ?? null;

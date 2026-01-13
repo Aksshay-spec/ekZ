@@ -1,15 +1,20 @@
 // components/products/all-products/MobileFiltersDrawer.tsx
 
 import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Separator } from "@/components/ui/separator";
+import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
 
 type FilterOption = {
   label: string;
@@ -42,7 +47,7 @@ export default function MobileFiltersDrawer({
   function toggle(key: string, value: string) {
     nextSelected[key] ??= [];
     nextSelected[key].includes(value)
-      ? (nextSelected[key] = nextSelected[key].filter(v => v !== value))
+      ? (nextSelected[key] = nextSelected[key].filter((v) => v !== value))
       : nextSelected[key].push(value);
   }
 
@@ -56,21 +61,19 @@ export default function MobileFiltersDrawer({
         <Separator className="my-4" />
 
         <Accordion type="multiple" className="space-y-2">
-          {filters.map(group => (
+          {filters.map((group) => (
             <AccordionItem key={group.key} value={group.key}>
               <AccordionTrigger>{group.label}</AccordionTrigger>
               <AccordionContent>
                 <div className="space-y-3">
-                  {group.options.map(opt => (
+                  {group.options.map((opt) => (
                     <label
                       key={opt.value}
                       className="flex items-center gap-3 text-sm"
                     >
                       <Checkbox
                         checked={selected[group.key]?.includes(opt.value)}
-                        onCheckedChange={() =>
-                          toggle(group.key, opt.value)
-                        }
+                        onCheckedChange={() => toggle(group.key, opt.value)}
                       />
                       {opt.label}
                     </label>

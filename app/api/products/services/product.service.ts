@@ -1,10 +1,11 @@
 //app/api/products/services/product.service.ts
+
+import { ProductFilter } from "../filters/product.filter";
+import { ProductPaginator } from "../pagination/product.paginator";
+import type { ProductRepository } from "../repositories/interfaces/ProductRepository";
+import { ProductSorter, type ProductSortKey } from "../sorters/product.sorter";
 import type { ProductCategory } from "../types/product.types";
 import { PRODUCT_CATEGORIES } from "../types/product.types";
-import type { ProductRepository } from "../repositories/interfaces/ProductRepository";
-import { ProductFilter } from "../filters/product.filter";
-import { ProductSorter, type ProductSortKey } from "../sorters/product.sorter";
-import { ProductPaginator } from "../pagination/product.paginator";
 
 export class ProductService {
   constructor(private repo: ProductRepository) {}
@@ -35,8 +36,8 @@ export class ProductService {
   async getAllProducts() {
     const productGroups = await Promise.all(
       PRODUCT_CATEGORIES.map((category) =>
-        this.repo.getProductsByCategory(category)
-      )
+        this.repo.getProductsByCategory(category),
+      ),
     );
 
     return productGroups.flat();

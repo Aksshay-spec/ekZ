@@ -1,6 +1,6 @@
 // lib/api/products.ts
 
-import { ProductCategory } from "@/app/api/products/types/product.types";
+import type { ProductCategory } from "@/app/api/products/types/product.types";
 
 export type PaginatedProducts<T> = {
   items: T[];
@@ -26,7 +26,7 @@ export async function getProducts(params: {
 
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/products?${qs.toString()}`,
-    { cache: "no-store" }
+    { cache: "no-store" },
   );
 
   if (!res.ok) throw new Error("Failed to fetch products");

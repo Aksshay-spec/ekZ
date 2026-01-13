@@ -1,8 +1,7 @@
 // app/api/testimonials/repositories/factory/TestimonialRepositoryFactory.ts
 
-import type { TestimonialRepository } from "../interfaces/TestimonialRepository";
 import { TestimonialJsonRepository } from "../implementations/TestimonialJsonRepository";
-
+import type { TestimonialRepository } from "../interfaces/TestimonialRepository";
 
 export class TestimonialRepositoryFactory {
   static getInstance(): TestimonialRepository {

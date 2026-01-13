@@ -1,8 +1,7 @@
 // app/api/our-journey/repositories/factory/OurJourneyRepositoryFactory.ts
 
-import type { OurJourneyRepository } from "../interfaces/OurJourneyRepository";
 import { OurJourneyJsonRepository } from "../implementations/OurJourneyJsonRepository";
-
+import type { OurJourneyRepository } from "../interfaces/OurJourneyRepository";
 
 export class OurJourneyRepositoryFactory {
   static getInstance(): OurJourneyRepository {

@@ -11,4 +11,3 @@ export type ProductFilterMetadata = {
 
   ratings: number[];
 };
-

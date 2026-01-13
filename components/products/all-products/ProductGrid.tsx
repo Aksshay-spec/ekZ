@@ -9,15 +9,13 @@ type Props = {
 export default function ProductGrid({ products }: Props) {
   if (!products.length) {
     return (
-      <div className="text-center text-muted-foreground">
-        No products found
-      </div>
+      <div className="text-center text-muted-foreground">No products found</div>
     );
   }
 
   return (
-<div
-  className="
+    <div
+      className="
     grid gap-4
     grid-cols-1
     sm:grid-cols-2
@@ -25,8 +23,7 @@ export default function ProductGrid({ products }: Props) {
     xl:grid-cols-4
     items-start
   "
->
-
+    >
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}

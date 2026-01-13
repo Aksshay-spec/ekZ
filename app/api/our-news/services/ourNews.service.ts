@@ -1,7 +1,7 @@
 // app/api/our-news/services/ourNews.service.ts
 
-import type { NewsItem } from "@/app/api/our-news/types/ourNews.types";
 import type { OurNewsRepository } from "@/app/api/our-news/repositories/interfaces/OurNewsRepository";
+import type { NewsItem } from "@/app/api/our-news/types/ourNews.types";
 
 export class OurNewsService {
   constructor(private repo: OurNewsRepository) {}

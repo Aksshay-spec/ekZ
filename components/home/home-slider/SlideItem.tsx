@@ -1,8 +1,7 @@
 import React from "react";
 import type { Slide } from "@/app/api/home-slider/types/homeSlider.types";
-
-import CarouselIndicators from "./CarouselIndicators";
 import { Button } from "@/components/ui/button";
+import CarouselIndicators from "./CarouselIndicators";
 
 type Props = {
   slide: Slide;

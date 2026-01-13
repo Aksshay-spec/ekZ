@@ -1,6 +1,7 @@
 //app/api/career-accordion/repositories/factory/CareerAccordionRepositoryFactory.ts
-import type { CareerAccordionRepository } from "../interfaces/CareerAccordionRepository";
+
 import { CareerAccordionJsonRepository } from "../implementations/CareerAccordionJsonRepository";
+import type { CareerAccordionRepository } from "../interfaces/CareerAccordionRepository";
 
 export class CareerAccordionRepositoryFactory {
   static getInstance(): CareerAccordionRepository {

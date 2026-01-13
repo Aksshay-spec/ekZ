@@ -15,7 +15,7 @@ export async function GET() {
     console.error("categories GET error:", error);
     return NextResponse.json(
       { error: "Failed to load categories" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

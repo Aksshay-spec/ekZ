@@ -1,7 +1,7 @@
+import { BadgeCheck, Lock, Scale, ShieldCheck } from "lucide-react";
 import React from "react";
-import PolicyCard from "./PolicyCard";
-import { ShieldCheck, BadgeCheck, Lock, Scale } from "lucide-react";
 import SectionHeader from "@/components/common/SectionHeader";
+import PolicyCard from "./PolicyCard";
 
 export default function PoliciesCardContainer() {
   return (

@@ -1,8 +1,7 @@
 // app/api/sku-product/repositories/factory/SkuProductRepositoryFactory.ts
 
-import type { SkuProductRepository } from "../interfaces/SkuProductRepository";
 import { SkuProductJsonRepository } from "../implementations/SkuProductJsonRepository";
-
+import type { SkuProductRepository } from "../interfaces/SkuProductRepository";
 
 export class SkuProductRepositoryFactory {
   static getInstance(): SkuProductRepository {

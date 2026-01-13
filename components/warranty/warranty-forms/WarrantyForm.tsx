@@ -1,15 +1,14 @@
 //components/warranty/warranty-forms/WarrantyForm.tsx
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useEffect, useRef, useState } from "react";
+import { useForm } from "react-hook-form";
 import * as z from "zod";
-
-import { Form, FormField, FormItem, FormControl } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 
 import ManualCaptcha from "../../common/ManualCaptcha";
 
@@ -80,13 +79,21 @@ export default function WarrantyForm() {
 
   // Render reCAPTCHA when form is validated and ready to show
   useEffect(() => {
-    if (showCaptcha && captchaReady && captchaContainerRef.current && !recaptchaRef.current) {
+    if (
+      showCaptcha &&
+      captchaReady &&
+      captchaContainerRef.current &&
+      !recaptchaRef.current
+    ) {
       try {
-        recaptchaRef.current = window.grecaptcha.render(captchaContainerRef.current, {
-          sitekey: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
-          theme: 'light',
-          size: 'normal',
-        });
+        recaptchaRef.current = window.grecaptcha.render(
+          captchaContainerRef.current,
+          {
+            sitekey: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+            theme: "light",
+            size: "normal",
+          },
+        );
         console.log("✅ reCAPTCHA widget rendered");
       } catch (error) {
         console.error("❌ Failed to render reCAPTCHA:", error);
@@ -140,7 +147,7 @@ export default function WarrantyForm() {
       if (!result.success) {
         console.warn("⚠️ reCAPTCHA verification failed");
         alert("❌ reCAPTCHA verification failed. Please try again.");
-        
+
         // Reset reCAPTCHA
         if (recaptchaRef.current !== null) {
           window.grecaptcha.reset(recaptchaRef.current);
@@ -179,11 +186,13 @@ export default function WarrantyForm() {
       const result = await response.json();
 
       if (result.success) {
-        alert("✅ Warranty request submitted successfully! You will receive a confirmation email shortly.");
+        alert(
+          "✅ Warranty request submitted successfully! You will receive a confirmation email shortly.",
+        );
         form.reset();
         setShowCaptcha(false);
         setManualCaptcha(null);
-        
+
         // Reset reCAPTCHA
         if (recaptchaRef.current !== null) {
           window.grecaptcha.reset(recaptchaRef.current);
@@ -196,7 +205,7 @@ export default function WarrantyForm() {
       alert(
         `❌ Failed to submit warranty request: ${
           error instanceof Error ? error.message : "Unknown error"
-        }. Please try again.`
+        }. Please try again.`,
       );
     } finally {
       setIsSubmitting(false);
@@ -247,7 +256,11 @@ export default function WarrantyForm() {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input placeholder="Phone" {...field} disabled={showCaptcha} />
+                  <Input
+                    placeholder="Phone"
+                    {...field}
+                    disabled={showCaptcha}
+                  />
                 </FormControl>
                 {form.formState.errors.phone && (
                   <p className="text-sm text-red-500">
@@ -264,7 +277,11 @@ export default function WarrantyForm() {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input placeholder="Email" {...field} disabled={showCaptcha} />
+                  <Input
+                    placeholder="Email"
+                    {...field}
+                    disabled={showCaptcha}
+                  />
                 </FormControl>
                 {form.formState.errors.email && (
                   <p className="text-sm text-red-500">
@@ -306,7 +323,10 @@ export default function WarrantyForm() {
                 <p className="text-sm text-gray-600 mb-3">
                   Please complete the security verification:
                 </p>
-                <div ref={captchaContainerRef} className="flex justify-center"></div>
+                <div
+                  ref={captchaContainerRef}
+                  className="flex justify-center"
+                ></div>
               </div>
             </div>
           )}
@@ -331,8 +351,8 @@ export default function WarrantyForm() {
               {isSubmitting
                 ? "Submitting..."
                 : showCaptcha
-                ? "Submit Warranty"
-                : "Continue"}
+                  ? "Submit Warranty"
+                  : "Continue"}
             </Button>
           </div>
 

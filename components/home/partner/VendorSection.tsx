@@ -1,14 +1,13 @@
 "use client";
 
+import { Beaker, Handshake, ShieldCheck, Store } from "lucide-react";
 import React from "react";
-import VendorBenefit from "./VendorBenefit";
-import { Handshake, Beaker, ShieldCheck, Store } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import VendorBenefit from "./VendorBenefit";
 
 export default function VendorSection() {
   return (
     <section className="w-full py-12 px-4 text-center">
-
       <div
         className="mx-auto flex items-center justify-center rounded-full"
         style={{

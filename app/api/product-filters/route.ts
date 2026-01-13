@@ -1,5 +1,5 @@
 //app/api/product-filters/route.ts
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 import { ProductFilterRepositoryFactory } from "./repositories/factory/ProductFilterRepositoryFactory";
 import { ProductFilterService } from "./services/product-filter.service";
 
@@ -10,7 +10,7 @@ export async function GET(req: NextRequest) {
     if (!category) {
       return NextResponse.json(
         { error: "category is required" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -24,7 +24,7 @@ export async function GET(req: NextRequest) {
     console.error("product-filters GET error:", error);
     return NextResponse.json(
       { error: "Failed to load filter metadata" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

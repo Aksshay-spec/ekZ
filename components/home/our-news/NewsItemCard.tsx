@@ -1,10 +1,10 @@
 // components/home/our-news/NewsItemCard.tsx
 
 import Image from "next/image";
-import { FaUsers } from "react-icons/fa";
-import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
+import { FaUsers } from "react-icons/fa";
 import type { NewsItem } from "@/app/api/our-news/types/ourNews.types";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function NewsItemCard({ item }: { item: NewsItem }) {
   const [imgError, setImgError] = useState(false);

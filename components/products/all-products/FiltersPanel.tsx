@@ -77,9 +77,7 @@ export default function FiltersPanel({ filters }: Props) {
                   >
                     <Checkbox
                       checked={checked}
-                      onCheckedChange={() =>
-                        toggleFilter(group.key, opt.value)
-                      }
+                      onCheckedChange={() => toggleFilter(group.key, opt.value)}
                     />
                     <span className="text-sm">{opt.label}</span>
                   </label>

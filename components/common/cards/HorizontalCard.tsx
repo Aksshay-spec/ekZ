@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
-import { cn } from "@/lib/utils";
+import type React from "react";
 import BaseCard from "@/components/common/cards/BaseCard";
+import { cn } from "@/lib/utils";
 
 type IconBg = "redish-pink" | "aqua-green";
 
@@ -28,7 +28,7 @@ export default function HorizontalCard({
       className={cn(
         "w-full flex items-center gap-6 p-0 rounded-2xl shadow-md bg-gray-100",
         "transition-all duration-300",
-        className
+        className,
       )}
     >
       {/* ICON BOX USING BASECARD */}

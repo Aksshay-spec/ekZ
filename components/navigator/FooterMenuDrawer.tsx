@@ -2,11 +2,11 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import {
   Drawer,
-  DrawerTrigger,
   DrawerContent,
+  DrawerDescription,
   DrawerHeader,
   DrawerTitle,
-  DrawerDescription,
+  DrawerTrigger,
 } from "@/components/ui/drawer";
 
 export default function FooterMenuDrawer() {
@@ -16,9 +16,7 @@ export default function FooterMenuDrawer() {
         <div className="text-gray-500 text-xl mb-1 mt-1">
           <FaBars />
         </div>
-        <span className="text-xs font-medium text-gray-500">
-          Menu
-        </span>
+        <span className="text-xs font-medium text-gray-500">Menu</span>
       </DrawerTrigger>
 
       <DrawerContent>

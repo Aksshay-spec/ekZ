@@ -1,17 +1,17 @@
 // components/home/sku-products/SkuProductsCarousel.tsx
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
+import type React from "react";
+import { useEffect, useRef, useState } from "react";
+import type { Sku } from "@/app/api/sku-product/types/skuProduct.types";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-
-import SkuProductItem from "./SkuProductItem";
 import { getDynamicIcon } from "@/utils/getDynamicIcon";
-import type { Sku } from "@/app/api/sku-product/types/skuProduct.types";
+import SkuProductItem from "./SkuProductItem";
 
 /**
  * Frontend decides styling (color/size). Backend only provides icon name.
@@ -28,13 +28,15 @@ const iconClassMap: Record<string, string> = {
 };
 
 export default function SkuProductsCarousel({ items }: { items: Sku[] }) {
-  const [icons, setIcons] = useState<Record<number, React.ReactNode | null>>({});
+  const [icons, setIcons] = useState<Record<number, React.ReactNode | null>>(
+    {},
+  );
   const [iconClasses, setIconClasses] = useState<Record<number, string>>({});
   const plugin = useRef(
     Autoplay({
       delay: 2000,
       stopOnInteraction: true,
-    })
+    }),
   );
 
   useEffect(() => {
@@ -47,7 +49,7 @@ export default function SkuProductsCarousel({ items }: { items: Sku[] }) {
           const node = IconComponent ? <IconComponent /> : null; // fallback handled by getDynamicIcon
           const cls = iconClassMap[item.icon] || "text-gray-700 text-3xl";
           return { id: item.id, icon: node, cls };
-        })
+        }),
       );
 
       if (!mounted) return;

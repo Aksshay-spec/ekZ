@@ -5,5 +5,4 @@ export type Sku = {
   count: string;
   title: string;
   icon: string;
-  
 };

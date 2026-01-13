@@ -1,17 +1,16 @@
 // components/careers/career-cards/CareerCardsSection.tsx
-import CareerCard from "./CareerCard"
-import type { CareerCardItem } from "@/app/api/career-cards/types/careerCards.types"
 
-import { CareerCardsService } from "@/app/api/career-cards/services/careerCards.service"
-import { CareerCardsRepositoryFactory } from "@/app/api/career-cards/repositories/factory/CareerCardsRepositoryFactory"
+import { CareerCardsRepositoryFactory } from "@/app/api/career-cards/repositories/factory/CareerCardsRepositoryFactory";
+import { CareerCardsService } from "@/app/api/career-cards/services/careerCards.service";
+import type { CareerCardItem } from "@/app/api/career-cards/types/careerCards.types";
+import CareerCard from "./CareerCard";
 
 export default async function CareerCardsSection() {
   // --- SSR / SSG ---
-  const repo = CareerCardsRepositoryFactory.getInstance()
-  const service = new CareerCardsService(repo)
+  const repo = CareerCardsRepositoryFactory.getInstance();
+  const service = new CareerCardsService(repo);
 
-  const careerCards: CareerCardItem[] =
-    await service.getCareerCards()
+  const careerCards: CareerCardItem[] = await service.getCareerCards();
 
   return (
     <section className="mt-20 px-4">
@@ -32,6 +31,5 @@ export default async function CareerCardsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

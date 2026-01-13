@@ -1,5 +1,5 @@
-import type { Slide } from "@/app/api/home-slider/types/homeSlider.types";
 import type { HeroSectionSliderRepository } from "@/app/api/home-slider/repositories/interfaces/HeroSectionSliderRepository";
+import type { Slide } from "@/app/api/home-slider/types/homeSlider.types";
 
 export class HomeSliderService {
   constructor(private repo: HeroSectionSliderRepository) {}

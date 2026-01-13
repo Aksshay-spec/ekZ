@@ -16,7 +16,7 @@ export async function GET() {
 
     return NextResponse.json(
       { error: "Failed to load career cards" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

@@ -1,6 +1,7 @@
 //app/api/product-filters/repositories/factory/ProductFilterRepositoryFactory.ts
-import type { ProductFilterRepository } from "../interfaces/ProductFilterRepository";
+
 import { ProductFilterJsonRepository } from "../implementations/ProductFilterJsonRepository";
+import type { ProductFilterRepository } from "../interfaces/ProductFilterRepository";
 // import { ProductFilterDbRepository } from "../implementations/ProductFilterDbRepository";
 
 export class ProductFilterRepositoryFactory {

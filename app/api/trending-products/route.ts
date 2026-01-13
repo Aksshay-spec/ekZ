@@ -16,7 +16,7 @@ export async function GET() {
     console.error("trending-products GET error:", error);
     return NextResponse.json(
       { error: "Failed to load trending products" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

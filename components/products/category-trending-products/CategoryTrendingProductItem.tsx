@@ -2,18 +2,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/app/api/products/types/product.types";
+import { cloudinaryUrl } from "@/lib/cloudinary";
 
 export default function CategoryTrendingProductItem({
   product,
 }: {
   product: Product;
 }) {
-  // const imageSrc =
-  //   product.images?.length > 0
-  //     ? `/images/${product.images[0]}`
-  //     : "/images/placeholder.png";
-  const imageSrc =
-    product.images?.[0] ?? "/images/products/placeholder.png";
+  // const imageSrc = product.images?.[0] ?? "/images/products/placeholder.png";
+
+  // const CLOUDINARY_BASE = process.env.NEXT_PUBLIC_CLOUDINARY_BASE;
+
+  // const imagePublicId = product.images?.[0] ?? null;
+
+  // const imageSrc = imagePublicId
+  //   ? `${CLOUDINARY_BASE}/${imagePublicId}`
+  //   : "/images/products/placeholder.png";
+
+  const imageSrc = cloudinaryUrl(product.images?.[0]);
 
   return (
     <Link href={`/products/${product.slug}`}>
@@ -33,4 +39,3 @@ export default function CategoryTrendingProductItem({
     </Link>
   );
 }
-

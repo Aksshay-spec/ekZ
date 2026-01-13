@@ -1,6 +1,7 @@
 // src/repositories/homeSlider.repository.ts
-import type { Slide } from "../types/homeSlider.types";
+
 import sliderData from "@/data/homeSliderData.json";
+import type { Slide } from "../types/homeSlider.types";
 
 /**
  * Repository: responsible for data access.

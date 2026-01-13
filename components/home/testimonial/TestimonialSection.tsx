@@ -2,8 +2,8 @@
 
 import { TestimonialRepositoryFactory } from "@/app/api/testimonials/repositories/factory/TestimonialRepositoryFactory";
 import { TestimonialService } from "@/app/api/testimonials/services/testimonial.service";
-import TestimonialCarousel from "./TestimonialCarousel";
 import SectionHeader from "@/components/common/SectionHeader";
+import TestimonialCarousel from "./TestimonialCarousel";
 
 export default async function TestimonialSection() {
   const repo = TestimonialRepositoryFactory.getInstance();

@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "../../ui/button";
 
 type Props = {
@@ -27,8 +27,15 @@ export default function ProductCard({ product }: Props) {
       ? Math.round(((product.mrp - product.price) / product.mrp) * 100)
       : null;
 
-  const imageSrc =
-    product.images?.[0] ?? "/images/products/placeholder.png";
+  const CLOUDINARY_BASE = process.env.NEXT_PUBLIC_CLOUDINARY_BASE;
+
+  const imagePublicId = product.images?.[0] ?? null;
+
+  const imageSrc = imagePublicId
+    ? `${CLOUDINARY_BASE}/${imagePublicId}`
+    : "/images/products/placeholder.png";
+
+  // const imageSrc = product.images?.[0] ?? "/images/products/placeholder.png";
 
   return (
     <Card className="flex flex-col hover:shadow-md transition">

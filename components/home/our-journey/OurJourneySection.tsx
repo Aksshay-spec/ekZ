@@ -2,8 +2,8 @@
 
 import { OurJourneyRepositoryFactory } from "@/app/api/our-journey/repositories/factory/OurJourneyRepositoryFactory";
 import { OurJourneyService } from "@/app/api/our-journey/services/ourJourney.service";
-import OurJourneyTimelines from "./OurJourneyTimelines";
 import SectionHeader from "@/components/common/SectionHeader";
+import OurJourneyTimelines from "./OurJourneyTimelines";
 
 export default async function OurJourneySection() {
   const repo = OurJourneyRepositoryFactory.getInstance();

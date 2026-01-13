@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import type React from "react";
 
 export type SocialIconProps = {
   href: string;
@@ -7,7 +7,11 @@ export type SocialIconProps = {
   external?: boolean;
 };
 
-export default function SocialIcon({href, icon, external = false}: SocialIconProps) {
+export default function SocialIcon({
+  href,
+  icon,
+  external = false,
+}: SocialIconProps) {
   return (
     <Link
       href={href}

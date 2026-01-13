@@ -1,6 +1,7 @@
 // src/services/homeSlider.service.ts
-import type { Slide } from "../types/homeSlider.types";
+
 import { getAllSlides } from "@/src/repositories/homeSlider.repository";
+import type { Slide } from "../types/homeSlider.types";
 
 /**
  * Service: business logic and transformations live here.

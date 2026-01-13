@@ -1,15 +1,15 @@
 //components/home/trending-products/TrendingProductsCarousel.tsx
 "use client";
 
-import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
+import * as React from "react";
+import type { TrendingProduct } from "@/app/api/trending-products/types/trendingProduct.types";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
 import TrendingProductItem from "./TrendingProductItem";
-import type { TrendingProduct } from "@/app/api/trending-products/types/trendingProduct.types";
 
 export default function TrendingProductsCarousel({
   products,
@@ -20,7 +20,7 @@ export default function TrendingProductsCarousel({
     Autoplay({
       delay: 2500,
       stopOnInteraction: true,
-    })
+    }),
   );
 
   return (

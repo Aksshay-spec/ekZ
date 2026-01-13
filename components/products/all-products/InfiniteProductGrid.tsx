@@ -1,8 +1,8 @@
 // components/products/all-products/InfiniteProductGrid.tsx
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import ProductGrid from "./ProductGrid";
 
 type Props = {
@@ -35,7 +35,7 @@ export default function InfiniteProductGrid({
     params.set("limit", "12");
 
     const res = await fetch(
-      `/api/products?category=${category}&${params.toString()}`
+      `/api/products?category=${category}&${params.toString()}`,
     );
 
     const data = await res.json();
@@ -54,7 +54,7 @@ export default function InfiniteProductGrid({
           loadNextPage();
         }
       },
-      { rootMargin: "200px" }
+      { rootMargin: "200px" },
     );
 
     observer.observe(observerRef.current);

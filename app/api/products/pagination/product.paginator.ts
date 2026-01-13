@@ -13,7 +13,7 @@ export class ProductPaginator {
   static paginate(
     items: Product[],
     page = 1,
-    limit = 12
+    limit = 12,
   ): PaginatedResult<Product> {
     const totalItems = items.length;
     const totalPages = Math.ceil(totalItems / limit);

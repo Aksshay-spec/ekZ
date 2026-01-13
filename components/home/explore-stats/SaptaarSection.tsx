@@ -1,18 +1,18 @@
 "use client";
 
-import SectionHeader from "@/components/common/SectionHeader";
-import HorizontalCard from "@/components/common/cards/HorizontalCard";
-import CircleIcon from "@/components/common/CircleIcon";
 import {
+  Badge,
+  Boxes,
+  Cpu,
+  FireExtinguisher,
+  Lightbulb,
   Plug,
   ShieldCheck,
   Zap,
-  Cpu,
-  Boxes,
-  Lightbulb,
-  Badge,
-  FireExtinguisher,
 } from "lucide-react";
+import CircleIcon from "@/components/common/CircleIcon";
+import HorizontalCard from "@/components/common/cards/HorizontalCard";
+import SectionHeader from "@/components/common/SectionHeader";
 
 export default function SaptaarSection() {
   return (

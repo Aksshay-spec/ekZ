@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
+import type React from "react";
+import { useEffect, useState } from "react";
 import CircleIcon from "@/components/common/CircleIcon";
 import LinearCard from "@/components/common/cards/LinearCard";
+import { cn } from "@/lib/utils";
 
 type TimelineCardProps = {
   align?: "left" | "right";
@@ -59,7 +60,7 @@ export default function TimelineCard({
       <div
         className={cn(
           "absolute top-1/2 -translate-y-1/2 z-20",
-          circleClassName
+          circleClassName,
         )}
         style={{
           left: align === "left" ? "0" : "auto",
@@ -90,7 +91,7 @@ export default function TimelineCard({
             ? "pl-6 md:pl-10 text-left justify-start"
             : "pr-6 md:pr-10 text-right justify-end",
           contentClassName,
-          cardProps?.className
+          cardProps?.className,
         )}
       />
     </div>

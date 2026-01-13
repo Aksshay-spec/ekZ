@@ -1,6 +1,7 @@
 //app/api/career-cards/repositories/factory/CareerCardsRepositoryFactory.ts
-import type { CareerCardsRepository } from "../interfaces/CareerCardsRepository";
+
 import { CareerCardsJsonRepository } from "../implementations/CareerCardsJsonRepository";
+import type { CareerCardsRepository } from "../interfaces/CareerCardsRepository";
 // import { CareerCardsFirebaseRepository } from "../implementations/CareerCardsFirebaseRepository"
 
 export class CareerCardsRepositoryFactory {

@@ -5,7 +5,6 @@ import ExploreHeader from "./ExploreHeader";
 export default function ExploreMoreSection() {
   return (
     <section className="w-full py-16 px-4 text-center">
-
       {/* Reusable Explore Header */}
       <ExploreHeader />
 
@@ -16,7 +15,6 @@ export default function ExploreMoreSection() {
           Place holder for category and product
         </p>
       </div>
-
     </section>
   );
 }

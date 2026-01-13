@@ -1,14 +1,14 @@
 // components/products/all-products/sort-dropdown.tsx
-"use client"
+"use client";
 
-import { useRouter, useSearchParams } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select";
 
 const SORT_OPTIONS = [
   { label: "Popularity", value: "popularity" },
@@ -17,27 +17,25 @@ const SORT_OPTIONS = [
   { label: "Price: High to Low", value: "price_desc" },
   { label: "Name: A–Z", value: "name_asc" },
   { label: "Name: Z–A", value: "name_desc" },
-]
+];
 
 export default function SortDropdown() {
-  const router = useRouter()
-  const searchParams = useSearchParams()
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
-  const currentSort = searchParams.get("sort") ?? "popularity"
+  const currentSort = searchParams.get("sort") ?? "popularity";
 
   function handleSortChange(value: string) {
-    const params = new URLSearchParams(searchParams.toString())
-    params.set("sort", value)
-    params.set("page", "1") // reset pagination on sort change
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("sort", value);
+    params.set("page", "1"); // reset pagination on sort change
 
-    router.push(`?${params.toString()}`)
+    router.push(`?${params.toString()}`);
   }
 
   return (
     <div className="flex items-center gap-2">
-      <span className="text-sm font-medium text-muted-foreground">
-        Sort By
-      </span>
+      <span className="text-sm font-medium text-muted-foreground">Sort By</span>
 
       <Select value={currentSort} onValueChange={handleSortChange}>
         <SelectTrigger className="w-[180px]">
@@ -53,5 +51,5 @@ export default function SortDropdown() {
         </SelectContent>
       </Select>
     </div>
-  )
+  );
 }

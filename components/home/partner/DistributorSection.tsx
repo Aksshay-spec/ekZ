@@ -1,9 +1,9 @@
 "use client";
 
+import { BadgeDollarSign, BarChart3, RefreshCcw, Store } from "lucide-react";
 import React from "react";
-import BenefitRow from "./BenefitRow";
-import { Store, RefreshCcw, BarChart3, BadgeDollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import BenefitRow from "./BenefitRow";
 
 export default function DistributorSection() {
   return (

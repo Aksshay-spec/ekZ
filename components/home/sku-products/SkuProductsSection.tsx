@@ -1,8 +1,8 @@
 // components/home/sku-products/SkuProductsSection.tsx
 import { SkuProductRepositoryFactory } from "@/app/api/sku-product/repositories/factory/SkuProductRepositoryFactory";
 import { SkuProductService } from "@/app/api/sku-product/services/skuProduct.service";
-import SkuProductsCarousel from "./SkuProductsCarousel";
 import SectionHeader from "@/components/common/SectionHeader";
+import SkuProductsCarousel from "./SkuProductsCarousel";
 
 export default async function SkuProductsSection() {
   const repo = SkuProductRepositoryFactory.getInstance();
@@ -19,10 +19,10 @@ export default async function SkuProductsSection() {
       >
         Every Count Tells Our Story
       </h3> */}
-            <SectionHeader
-              subtitle="Every Count Tells Our Story"
-              subtitleClassName=""
-            />
+      <SectionHeader
+        subtitle="Every Count Tells Our Story"
+        subtitleClassName=""
+      />
 
       <SkuProductsCarousel items={items} />
     </section>

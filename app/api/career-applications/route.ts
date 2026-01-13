@@ -1,9 +1,10 @@
 //app/api/career-applications/route.ts
-import { NextResponse } from "next/server";
-import { CareerApplicationService } from "./services/careerApplication.service";
-import { CareerApplicationRepositoryFactory } from "./repositories/factory/CareerApplicationRepositoryFactory";
-import { CareerApplicationMailService } from "@/lib/mail/career-application-mail.service";
+
 import fs from "fs/promises";
+import { NextResponse } from "next/server";
+import { CareerApplicationMailService } from "@/lib/mail/career-application-mail.service";
+import { CareerApplicationRepositoryFactory } from "./repositories/factory/CareerApplicationRepositoryFactory";
+import { CareerApplicationService } from "./services/careerApplication.service";
 
 export async function POST(req: Request) {
   try {
@@ -55,7 +56,7 @@ export async function POST(req: Request) {
     console.error("Apply error:", error);
     return NextResponse.json(
       { error: "Failed to submit application" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

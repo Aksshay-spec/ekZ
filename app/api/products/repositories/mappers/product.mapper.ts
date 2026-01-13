@@ -20,10 +20,7 @@ export type RawProduct = {
   wattages?: string[];
   weights?: string[];
 
-  specifications: Record<
-    string,
-    string | number | boolean | null | undefined
-  >;
+  specifications: Record<string, string | number | boolean | null | undefined>;
 
   stock: {
     available: boolean;
@@ -37,12 +34,12 @@ export type RawProduct = {
  * Normalize specs so Product stays strict
  */
 function normalizeSpecifications(
-  specs: RawProduct["specifications"]
+  specs: RawProduct["specifications"],
 ): Record<string, string | number | boolean> {
   return Object.fromEntries(
     Object.entries(specs).filter(
-      ([, value]) => value !== null && value !== undefined
-    )
+      ([, value]) => value !== null && value !== undefined,
+    ),
   ) as Record<string, string | number | boolean>;
 }
 

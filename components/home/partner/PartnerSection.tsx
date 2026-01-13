@@ -1,9 +1,9 @@
 "use client";
 
+import SectionHeader from "@/components/common/SectionHeader";
+import DistributorSection from "./DistributorSection";
 import PartnerHeader from "./PartnerHeader";
 import VendorSection from "./VendorSection";
-import DistributorSection from "./DistributorSection";
-import SectionHeader from "@/components/common/SectionHeader";
 
 export default function PartnerSection() {
   return (

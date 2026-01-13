@@ -1,16 +1,15 @@
 // components/home/testimonial/TestimonialCarousel.tsx
 "use client";
 
-import { useState, useEffect, useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
+import { useEffect, useRef, useState } from "react";
+import type { Testimonial } from "@/app/api/testimonials/types/testimonial.types";
 import {
   Carousel,
+  type CarouselApi,
   CarouselContent,
   CarouselItem,
-  CarouselApi,
 } from "@/components/ui/carousel";
-
-import type { Testimonial } from "@/app/api/testimonials/types/testimonial.types";
 import TestimonialItem from "./TestimonialItem";
 
 export default function TestimonialCarousel({
@@ -25,7 +24,7 @@ export default function TestimonialCarousel({
     Autoplay({
       delay: 3500,
       stopOnInteraction: true,
-    })
+    }),
   );
 
   useEffect(() => {

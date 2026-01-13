@@ -1,5 +1,6 @@
 .shootingStarsBg {
-  background-image: radial-gradient(
+  background-image:
+    radial-gradient(
       1px 1px at 20px 30px,
       oklch(from var(--foreground) l c h / 0.6),
       transparent

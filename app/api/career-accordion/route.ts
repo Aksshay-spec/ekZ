@@ -15,7 +15,7 @@ export async function GET() {
     console.error("career-accordion GET error:", error);
     return NextResponse.json(
       { error: "Failed to load accordion data" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

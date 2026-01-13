@@ -1,7 +1,8 @@
 //components/careers/career-accordion/CareerAccordion.tsx
+
+import type { CareerAccordionItem } from "@/app/api/career-accordion/types/careerAccordion.types";
 import SectionHeader from "@/components/common/SectionHeader";
 import CareerAccordionClient from "./CareerAccordionClient";
-import type { CareerAccordionItem } from "@/app/api/career-accordion/types/careerAccordion.types";
 
 export default function CareerAccordion({
   items,

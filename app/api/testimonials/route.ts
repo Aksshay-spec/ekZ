@@ -16,7 +16,7 @@ export async function GET() {
     console.error("testimonials GET error:", error);
     return NextResponse.json(
       { error: "Failed to load testimonials" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

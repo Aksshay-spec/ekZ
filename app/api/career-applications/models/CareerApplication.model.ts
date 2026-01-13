@@ -1,5 +1,5 @@
 //app/api/career-applications/models/CareerApplication.model.ts
-import mongoose, { Schema, model, models } from "mongoose";
+import mongoose, { model, models, Schema } from "mongoose";
 
 const CareerApplicationSchema = new Schema(
   {
@@ -12,7 +12,7 @@ const CareerApplicationSchema = new Schema(
     coverLetter: String,
     resumeUrl: String,
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 export const CareerApplicationModel =

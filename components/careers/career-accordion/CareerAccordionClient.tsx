@@ -1,5 +1,6 @@
 //components/careers/career-accordion/CareerAccordionClient.tsx
 
+import type { CareerAccordionItem } from "@/app/api/career-accordion/types/careerAccordion.types";
 import {
   Accordion,
   AccordionContent,
@@ -7,16 +8,18 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import type { CareerAccordionItem } from "@/app/api/career-accordion/types/careerAccordion.types";
-
 type Props = {
   items: CareerAccordionItem[];
 };
 
 export default function CareerAccordionClient({ items }: Props) {
-      const defaultValue = items[0]?.id;
+  const defaultValue = items[0]?.id;
   return (
-    <Accordion type="single" defaultValue={defaultValue} className="w-full space-y-2">
+    <Accordion
+      type="single"
+      defaultValue={defaultValue}
+      className="w-full space-y-2"
+    >
       {items.map((item) => (
         <AccordionItem
           key={item.id}

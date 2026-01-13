@@ -1,11 +1,12 @@
 // components/careers/career-apply/CareerApplyForm.tsx
 "use client";
 
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-
+import ManualCaptcha from "@/components/common/ManualCaptcha";
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -15,8 +16,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import ManualCaptcha from "@/components/common/ManualCaptcha";
 
 declare global {
   interface Window {
@@ -75,7 +74,7 @@ export default function CareerApplyForm({ jobSlug }: { jobSlug: string }) {
           try {
             const token = await window.grecaptcha.execute(
               process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
-              { action: "career_apply" }
+              { action: "career_apply" },
             );
 
             clearTimeout(timeout);

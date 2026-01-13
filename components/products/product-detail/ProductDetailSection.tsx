@@ -1,25 +1,24 @@
-//components/products/product-detail/ProductDetailSection.tsx
-import ProductGallery from "@/components/products/product-detail/ProductGallery";
-import ProductInfo from "@/components/products/product-detail/ProductInfo";
+// components/products/product-detail/ProductDetailSection.tsx
+import ProductDetailClient from "./ProductDetailClient";
+import ProductInfo from "./ProductInfo";
 
 type Props = {
   product: {
     images: string[];
-    // add other product fields if you want stricter typing
     [key: string]: any;
   };
 };
 
 export default function ProductDetailSection({ product }: Props) {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-      {/* LEFT - IMAGE GALLERY (STICKY) */}
-      <div className="lg:sticky lg:top-24 h-fit">
-        <ProductGallery images={product.images} />
-      </div>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      {/* LEFT SIDE (Gallery + Zoom) */}
+      <ProductDetailClient images={product.images} />
 
-      {/* RIGHT - PRODUCT DETAILS */}
-      <ProductInfo product={product} />
+      {/* RIGHT SIDE (Product Info) */}
+      <div>
+        <ProductInfo product={product} />
+      </div>
     </div>
   );
 }

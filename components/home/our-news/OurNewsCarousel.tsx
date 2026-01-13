@@ -1,18 +1,18 @@
 // components/home/our-news/OurNewsCarousel.tsx
 "use client";
 
-import { useRef, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-  CarouselApi,
-} from "@/components/ui/carousel";
+import { useRef, useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import type { NewsItem } from "@/app/api/our-news/types/ourNews.types";
+import {
+  Carousel,
+  type CarouselApi,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import NewsItemCard from "./NewsItemCard";
 
 export default function OurNewsCarousel({ news }: { news: NewsItem[] }) {

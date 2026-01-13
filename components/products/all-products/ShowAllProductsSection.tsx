@@ -1,10 +1,10 @@
 //components/products/all-products/ShowAllProductsSection.tsx
-import SortDropdown from "@/components/products/all-products/sort-dropdown";
-import MobileFiltersWrapper from "@/components/products/all-products/MobileFiltersWrapper";
-import FiltersPanel from "@/components/products/all-products/FiltersPanel";
-import InfiniteProductGrid from "@/components/products/all-products/InfiniteProductGrid";
 
 import type { ProductCategory } from "@/app/api/products/types/product.types";
+import FiltersPanel from "@/components/products/all-products/FiltersPanel";
+import InfiniteProductGrid from "@/components/products/all-products/InfiniteProductGrid";
+import MobileFiltersWrapper from "@/components/products/all-products/MobileFiltersWrapper";
+import SortDropdown from "@/components/products/all-products/sort-dropdown";
 import type { getFilterMetadata } from "@/lib/api/filters";
 
 type Filters = Awaited<ReturnType<typeof getFilterMetadata>>;

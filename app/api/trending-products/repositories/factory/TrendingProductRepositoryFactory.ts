@@ -1,8 +1,7 @@
 // app/api/trending-products/repositories/factory/TrendingProductRepositoryFactory.ts
 
-import type { TrendingProductRepository } from "../interfaces/TrendingProductRepository";
 import { TrendingProductJsonRepository } from "../implementations/TrendingProductJsonRepository";
-
+import type { TrendingProductRepository } from "../interfaces/TrendingProductRepository";
 
 export class TrendingProductRepositoryFactory {
   static getInstance(): TrendingProductRepository {

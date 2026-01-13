@@ -1,5 +1,5 @@
 // components/home/sku-products/SkuProductItem.tsx
-import React from "react";
+import type React from "react";
 
 type Props = {
   id: number;

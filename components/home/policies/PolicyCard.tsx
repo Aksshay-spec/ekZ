@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
-import BaseCard from "@/components/common/cards/BaseCard";
+import type React from "react";
 import CircleIcon from "@/components/common/CircleIcon";
+import BaseCard from "@/components/common/cards/BaseCard";
 
 export default function PolicyCard({
   href,

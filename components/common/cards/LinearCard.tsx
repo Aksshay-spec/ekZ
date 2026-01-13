@@ -44,7 +44,7 @@ export default function LinearCard({
       className={cn(
         "w-full flex items-center justify-center shadow-md transition-all duration-300",
         "text-center text-sm md:text-lg p-6 md:p-10 font-semibold",
-        className
+        className,
       )}
       style={{
         background: gradient ?? defaultGradient,

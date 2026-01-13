@@ -1,7 +1,8 @@
 //app/api/career-applications/repositories/factory/CareerApplicationRepositoryFactory.ts
-import type { CareerApplicationRepository } from "../interfaces/CareerApplicationRepository";
+
 import { CareerApplicationJsonRepository } from "../implementations/CareerApplicationJsonRepository";
 import { CareerApplicationMongoRepository } from "../implementations/CareerApplicationMongoRepository";
+import type { CareerApplicationRepository } from "../interfaces/CareerApplicationRepository";
 // import { CareerApplicationFirebaseRepository } from "../implementations/CareerApplicationFirebaseRepository"
 
 export class CareerApplicationRepositoryFactory {

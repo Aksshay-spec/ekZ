@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { NAV_LINKS, IMAGE_PATHS } from "@/constants/links";
+import { IMAGE_PATHS, NAV_LINKS } from "@/constants/links";
 import EkjahanLink from "./EkjahanLink";
 
 export default function MainLogoNav() {
@@ -8,7 +8,7 @@ export default function MainLogoNav() {
       <div className="flex justify-between items-center px-4 h-18 w-full md:w-3xl md:mx-auto">
         <EkjahanLink
           href={NAV_LINKS.HOME}
-          className="w-32 md:w-48 mt-0" 
+          className="w-32 md:w-48 mt-0"
           icon={
             <Image
               src={IMAGE_PATHS.LOGO}

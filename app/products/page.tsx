@@ -1,15 +1,13 @@
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
-
-import HomeSliderSection from "@/components/products/home-slider/HomeSliderSection";
-import CategoryTrendingProductsSection from "@/components/products/category-trending-products/CategoryTrendingProductsSection";
-import CategoryProductsSection from "@/components/products/category-carousel-products/CategoryProductsSection";
 import PolicySection from "@/components/home/policies/PolicySection";
-
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import CategoryProductsSection from "@/components/products/category-carousel-products/CategoryProductsSection";
+import CategoryTrendingProductsSection from "@/components/products/category-trending-products/CategoryTrendingProductsSection";
+import HomeSliderSection from "@/components/products/home-slider/HomeSliderSection";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 const categories = [
   {
@@ -29,16 +27,13 @@ const categories = [
 export default function ProductsLandingPage() {
   return (
     <main className="flex flex-col gap-16">
-
       {/* 🔥 HERO / SLIDER */}
       <HomeSliderSection />
 
       {/* 🛍 SHOP BY CATEGORY */}
       <section className="container mx-auto px-4">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-semibold">
-            Shop by Category
-          </h2>
+          <h2 className="text-2xl font-semibold">Shop by Category</h2>
           <Badge variant="secondary">Browse All</Badge>
         </div>
 
@@ -50,9 +45,7 @@ export default function ProductsLandingPage() {
             >
               <CardContent className="p-6 flex flex-col gap-4">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-xl font-semibold">
-                    {category.title}
-                  </h3>
+                  <h3 className="text-xl font-semibold">{category.title}</h3>
                   <Badge>{category.badge}</Badge>
                 </div>
 
@@ -64,9 +57,7 @@ export default function ProductsLandingPage() {
                   href={`/products/categories/${category.slug}`}
                   className="mt-2"
                 >
-                  <Button className="w-fit">
-                    Explore {category.title}
-                  </Button>
+                  <Button className="w-fit">Explore {category.title}</Button>
                 </Link>
               </CardContent>
             </Card>
@@ -76,17 +67,13 @@ export default function ProductsLandingPage() {
 
       {/* 🔥 TRENDING PRODUCTS */}
       <section className="container mx-auto px-4">
-        <h2 className="text-2xl font-semibold mb-6">
-          Trending Products
-        </h2>
+        <h2 className="text-2xl font-semibold mb-6">Trending Products</h2>
         <CategoryTrendingProductsSection />
       </section>
 
       {/* ⭐ FEATURED PRODUCTS */}
       <section className="container mx-auto px-4">
-        <h2 className="text-2xl font-semibold mb-6">
-          Featured Products
-        </h2>
+        <h2 className="text-2xl font-semibold mb-6">Featured Products</h2>
         <CategoryProductsSection />
       </section>
 

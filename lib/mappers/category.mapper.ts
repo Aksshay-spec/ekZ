@@ -8,7 +8,7 @@ const CATEGORY_SLUG_MAP: Record<string, ProductCategory> = {
 };
 
 export function mapSlugToCategory(
-  slug: string | string[] | undefined
+  slug: string | string[] | undefined,
 ): ProductCategory {
   if (!slug) {
     throw new Error("Category slug is missing");

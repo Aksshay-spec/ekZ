@@ -1,16 +1,12 @@
 // app/api/product-filters/repositories/implementations/ProductFilterJsonRepository.ts
 import electricData from "@/data/electric.json";
 import fmcgData from "@/data/fmcg.json";
-
-import type { ProductFilterRepository } from "../interfaces/ProductFilterRepository";
 import type { ProductFilterMetadata } from "../../types/product-filter.types";
+import type { ProductFilterRepository } from "../interfaces/ProductFilterRepository";
 
-export class ProductFilterJsonRepository
-  implements ProductFilterRepository
-{
+export class ProductFilterJsonRepository implements ProductFilterRepository {
   async getFiltersByCategory(category: string): Promise<ProductFilterMetadata> {
-    const products =
-      category === "SAPTAAR_ELECTRIC" ? electricData : fmcgData;
+    const products = category === "SAPTAAR_ELECTRIC" ? electricData : fmcgData;
 
     const colors = new Set<string>();
     const wattages = new Set<string>();
@@ -29,20 +25,12 @@ export class ProductFilterJsonRepository
     });
 
     return {
-      colors:
-        category === "SAPTAAR_ELECTRIC"
-          ? Array.from(colors).sort()
-          : [],
+      colors: category === "SAPTAAR_ELECTRIC" ? Array.from(colors).sort() : [],
 
       wattages:
-        category === "SAPTAAR_ELECTRIC"
-          ? Array.from(wattages).sort()
-          : [],
+        category === "SAPTAAR_ELECTRIC" ? Array.from(wattages).sort() : [],
 
-      weights:
-        category === "FMCG"
-          ? Array.from(weights).sort()
-          : [],
+      weights: category === "FMCG" ? Array.from(weights).sort() : [],
 
       priceRange: {
         min: minPrice === Infinity ? 0 : minPrice,

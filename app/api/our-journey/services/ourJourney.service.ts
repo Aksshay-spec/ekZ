@@ -1,7 +1,7 @@
 // app/api/our-journey/services/ourJourney.service.ts
 
-import type { JourneyItem } from "@/app/api/our-journey/types/journey.types";
 import type { OurJourneyRepository } from "@/app/api/our-journey/repositories/interfaces/OurJourneyRepository";
+import type { JourneyItem } from "@/app/api/our-journey/types/journey.types";
 
 export class OurJourneyService {
   constructor(private repo: OurJourneyRepository) {}

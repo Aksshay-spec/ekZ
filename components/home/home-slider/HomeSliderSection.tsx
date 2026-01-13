@@ -1,5 +1,5 @@
-import { HomeSliderService } from "@/app/api/home-slider/services/homeSlider.service";
 import { HeroSectionSliderFactory } from "@/app/api/home-slider/repositories/factory/HeroSectionSliderRepositoryFactory";
+import { HomeSliderService } from "@/app/api/home-slider/services/homeSlider.service";
 
 import HomeSlider from "./HomeSlider";
 

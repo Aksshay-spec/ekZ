@@ -1,7 +1,7 @@
 // app/api/sku-product/services/skuProduct.service.ts
 
-import type { Sku } from "@/app/api/sku-product/types/skuProduct.types";
 import type { SkuProductRepository } from "@/app/api/sku-product/repositories/interfaces/SkuProductRepository";
+import type { Sku } from "@/app/api/sku-product/types/skuProduct.types";
 
 export class SkuProductService {
   constructor(private repo: SkuProductRepository) {}

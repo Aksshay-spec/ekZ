@@ -24,7 +24,6 @@ export default function BaseCard({
   className,
   children,
 }: BaseCardProps) {
-  
   const ref = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
@@ -32,12 +31,24 @@ export default function BaseCard({
 
     // REMOVE inherited background
     ref.current.style.setProperty("background", "none", "important");
-    ref.current.style.setProperty("background-color", "transparent", "important");
+    ref.current.style.setProperty(
+      "background-color",
+      "transparent",
+      "important",
+    );
 
     // Apply custom color
     if (variant === "custom") {
-      ref.current.style.setProperty("background-color", customColor ?? "#e5e5e5", "important");
-      ref.current.style.setProperty("color", customTextColor ?? "#1a1a1a", "important");
+      ref.current.style.setProperty(
+        "background-color",
+        customColor ?? "#e5e5e5",
+        "important",
+      );
+      ref.current.style.setProperty(
+        "color",
+        customTextColor ?? "#1a1a1a",
+        "important",
+      );
     } else {
       const family = variant === "primary" ? "redish-pink" : "aqua-green";
       const cssVar = `var(--color-${family}-${shade})`;

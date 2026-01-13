@@ -2,16 +2,14 @@
 export const dynamic = "force-dynamic";
 
 import { notFound } from "next/navigation";
-
-import { getProducts } from "@/lib/api/products";
-import { getFilterMetadata } from "@/lib/api/filters";
-import { mapSlugToCategory } from "@/lib/mappers/category.mapper";
-
-import HomeSliderSection from "@/components/products/home-slider/HomeSliderSection";
+import PolicySection from "@/components/home/policies/PolicySection";
+import ShowAllProductsSection from "@/components/products/all-products/ShowAllProductsSection";
 import CategoryProductsSection from "@/components/products/category-carousel-products/CategoryProductsSection";
 import CategoryTrendingProductsSection from "@/components/products/category-trending-products/CategoryTrendingProductsSection";
-import ShowAllProductsSection from "@/components/products/all-products/ShowAllProductsSection";
-import PolicySection from "@/components/home/policies/PolicySection";
+import HomeSliderSection from "@/components/products/home-slider/HomeSliderSection";
+import { getFilterMetadata } from "@/lib/api/filters";
+import { getProducts } from "@/lib/api/products";
+import { mapSlugToCategory } from "@/lib/mappers/category.mapper";
 
 type PageProps = {
   params: Promise<{ slug: string }>;

@@ -5,7 +5,7 @@ import { ProductService } from "../services/product.service";
 
 export async function GET(
   _: Request,
-  { params }: { params: Promise<{ slug: string }> }
+  { params }: { params: Promise<{ slug: string }> },
 ) {
   try {
     // ✅ FIX: unwrap params (Next.js 14 requirement)
@@ -17,10 +17,7 @@ export async function GET(
     const product = await service.getProductDetail(slug);
 
     if (!product) {
-      return NextResponse.json(
-        { error: "Product not found" },
-        { status: 404 }
-      );
+      return NextResponse.json({ error: "Product not found" }, { status: 404 });
     }
 
     return NextResponse.json(product);
@@ -28,7 +25,7 @@ export async function GET(
     console.error("product detail GET error:", error);
     return NextResponse.json(
       { error: "Failed to load product" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

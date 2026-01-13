@@ -13,7 +13,12 @@
     "reviewCount": 312,
     "colors": ["Silver", "Black"],
     "wattages": ["22kW"],
-    "images": ["/products/el-001/1.png", "/products/el-001/2.png", "/products/el-001/3.png", "/products/el-001/4.png"],
+    "images": [
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
+    ],
     "specifications": {
       "power": "22kW",
       "voltageRange": "340V-460V",
@@ -40,7 +45,12 @@
     "reviewCount": 198,
     "colors": ["White"],
     "wattages": ["7kW"],
-    "images": ["/products/el-002/1.png", "/products/el-002/2.png", "/products/el-002/3.png", "/products/el-002/4.png"],
+    "images": [
+      "products/el-002/1.png",
+      "products/el-002/2.png",
+      "products/el-002/3.png",
+      "products/el-002/4.png"
+    ],
     "specifications": {
       "power": "7kW",
       "voltageRange": "220V",
@@ -66,7 +76,12 @@
     "rating": 4.6,
     "reviewCount": 86,
     "colors": ["Gray"],
-    "images": ["/products/el-003/1.png", "/products/el-003/2.png", "/products/el-003/3.png", "/products/el-003/4.png"],
+    "images": [
+      "products/el-003/1.png",
+      "products/el-003/2.png",
+      "products/el-003/3.png",
+      "products/el-003/4.png"
+    ],
     "specifications": {
       "protection": "IP65",
       "material": "Mild Steel",
@@ -91,7 +106,12 @@
     "reviewCount": 245,
     "colors": ["White"],
     "wattages": ["5kW"],
-    "images": ["/products/el-004/1.png", "/products/el-004/2.png", "/products/el-004/3.png", "/products/el-004/4.png"],
+    "images": [
+      "products/el-004/1.png",
+      "products/el-004/2.png",
+      "products/el-004/3.png",
+      "products/el-004/4.png"
+    ],
     "specifications": {
       "power": "5kW",
       "batterySupport": true,
@@ -116,7 +136,12 @@
     "reviewCount": 410,
     "colors": ["Black"],
     "wattages": ["100W", "150W"],
-    "images": ["/products/el-005/1.png", "/products/el-005/2.png", "/products/el-005/3.png", "/products/el-005/4.png"],
+    "images": [
+      "products/el-005/1.png",
+      "products/el-005/2.png",
+      "products/el-005/3.png",
+      "products/el-005/4.png"
+    ],
     "specifications": {
       "wattage": "150W",
       "lumens": "18000",
@@ -139,8 +164,17 @@
     "rating": 4.7,
     "reviewCount": 980,
     "colors": ["White"],
-    "images": ["/products/el-006/1.png", "/products/el-006/2.png", "/products/el-006/3.png", "/products/el-006/4.png"],
-    "specifications": { "current": "32A", "curve": "C", "certification": "IEC" },
+    "images": [
+      "products/el-006/1.png",
+      "products/el-006/2.png",
+      "products/el-006/3.png",
+      "products/el-006/4.png"
+    ],
+    "specifications": {
+      "current": "32A",
+      "curve": "C",
+      "certification": "IEC"
+    },
     "tags": ["MCB", "Safety"],
     "stock": { "available": true, "quantity": 500 },
     "createdAt": "2025-01-05"
@@ -158,8 +192,17 @@
     "rating": 4.1,
     "reviewCount": 210,
     "colors": ["White"],
-    "images": ["/products/el-007/1.png", "/products/el-007/2.png", "/products/el-007/3.png", "/products/el-007/4.png"],
-    "specifications": { "phase": "Single", "communication": "RF", "accuracy": "Class 1" },
+    "images": [
+      "products/el-007/1.png",
+      "products/el-007/2.png",
+      "products/el-007/3.png",
+      "products/el-007/4.png"
+    ],
+    "specifications": {
+      "phase": "Single",
+      "communication": "RF",
+      "accuracy": "Class 1"
+    },
     "tags": ["Meter", "Smart"],
     "stock": { "available": true, "quantity": 200 },
     "createdAt": "2025-01-04"
@@ -177,8 +220,17 @@
     "rating": 4.6,
     "reviewCount": 540,
     "colors": ["Black"],
-    "images": ["/products/el-008/1.png", "/products/el-008/2.png", "/products/el-008/3.png", "/products/el-008/4.png"],
-    "specifications": { "core": "4 Core", "material": "Copper", "insulation": "PVC" },
+    "images": [
+      "products/el-008/1.png",
+      "products/el-008/2.png",
+      "products/el-008/3.png",
+      "products/el-008/4.png"
+    ],
+    "specifications": {
+      "core": "4 Core",
+      "material": "Copper",
+      "insulation": "PVC"
+    },
     "tags": ["Cable", "Industrial"],
     "stock": { "available": true, "quantity": 90 },
     "createdAt": "2025-01-03"
@@ -197,8 +249,17 @@
     "reviewCount": 375,
     "colors": ["Blue"],
     "wattages": ["550W"],
-    "images": ["/products/el-009/1.png", "/products/el-009/2.png", "/products/el-009/3.png", "/products/el-009/4.png"],
-    "specifications": { "power": "550W", "cellType": "Mono PERC", "efficiency": "21%" },
+    "images": [
+      "products/el-009/1.png",
+      "products/el-009/2.png",
+      "products/el-009/3.png",
+      "products/el-009/4.png"
+    ],
+    "specifications": {
+      "power": "550W",
+      "cellType": "Mono PERC",
+      "efficiency": "21%"
+    },
     "tags": ["Solar", "Panel"],
     "stock": { "available": true, "quantity": 150 },
     "createdAt": "2025-01-02"
@@ -217,8 +278,17 @@
     "reviewCount": 98,
     "colors": ["Black"],
     "wattages": ["10kVA"],
-    "images": ["/products/el-010/1.png", "/products/el-010/2.png", "/products/el-010/3.png", "/products/el-010/4.png"],
-    "specifications": { "capacity": "10 kVA", "backup": "2 Hours", "phase": "Three" },
+    "images": [
+      "products/el-010/1.png",
+      "products/el-010/2.png",
+      "products/el-010/3.png",
+      "products/el-010/4.png"
+    ],
+    "specifications": {
+      "capacity": "10 kVA",
+      "backup": "2 Hours",
+      "phase": "Three"
+    },
     "tags": ["UPS", "Industrial"],
     "stock": { "available": true, "quantity": 8 },
     "createdAt": "2025-01-01"
@@ -237,7 +307,12 @@
     "reviewCount": 610,
     "colors": ["Gray"],
     "wattages": ["90W", "120W"],
-    "images": ["/products/el-011/1.png", "/products/el-011/2.png", "/products/el-011/3.png", "/products/el-011/4.png"],
+    "images": [
+      "products/el-011/1.png",
+      "products/el-011/2.png",
+      "products/el-011/3.png",
+      "products/el-011/4.png"
+    ],
     "specifications": { "wattage": "120W", "ipRating": "IP66" },
     "tags": ["LED", "Outdoor"],
     "stock": { "available": true, "quantity": 300 },
@@ -257,7 +332,12 @@
     "reviewCount": 142,
     "colors": ["Gray"],
     "wattages": ["7.5kW"],
-    "images": ["/products/el-012/1.png", "/products/el-012/2.png", "/products/el-012/3.png", "/products/el-012/4.png"],
+    "images": [
+      "products/el-012/1.png",
+      "products/el-012/2.png",
+      "products/el-012/3.png",
+      "products/el-012/4.png"
+    ],
     "specifications": { "powerRange": "7.5kW", "control": "Vector Control" },
     "tags": ["VFD", "Automation"],
     "stock": { "available": true, "quantity": 18 },
@@ -276,7 +356,12 @@
     "rating": 4.8,
     "reviewCount": 64,
     "colors": ["Black"],
-    "images": ["/products/el-013/1.png", "/products/el-013/2.png", "/products/el-013/3.png", "/products/el-013/4.png"],
+    "images": [
+      "products/el-013/1.png",
+      "products/el-013/2.png",
+      "products/el-013/3.png",
+      "products/el-013/4.png"
+    ],
     "specifications": { "current": "1600A", "breakingCapacity": "65kA" },
     "tags": ["ACB", "Safety"],
     "stock": { "available": true, "quantity": 6 },
@@ -295,7 +380,12 @@
     "rating": 4.3,
     "reviewCount": 720,
     "colors": ["Black", "Gold"],
-    "images": ["/products/el-014/1.png", "/products/el-014/2.png", "/products/el-014/3.png", "/products/el-014/4.png"],
+    "images": [
+      "products/el-014/1.png",
+      "products/el-014/2.png",
+      "products/el-014/3.png",
+      "products/el-014/4.png"
+    ],
     "specifications": { "connectivity": "WiFi", "voiceSupport": true },
     "tags": ["Smart", "Home"],
     "stock": { "available": true, "quantity": 260 },
@@ -315,7 +405,12 @@
     "reviewCount": 51,
     "colors": ["Blue"],
     "wattages": ["100kVA"],
-    "images": ["/products/el-015/1.png", "/products/el-015/2.png", "/products/el-015/3.png", "/products/el-015/4.png"],
+    "images": [
+      "products/el-015/1.png",
+      "products/el-015/2.png",
+      "products/el-015/3.png",
+      "products/el-015/4.png"
+    ],
     "specifications": { "capacity": "100 kVA", "cooling": "ONAN" },
     "tags": ["Transformer", "Industrial"],
     "stock": { "available": true, "quantity": 5 },
@@ -334,8 +429,16 @@
     "rating": 4.4,
     "reviewCount": 330,
     "colors": ["Copper"],
-    "images": ["/products/el-016/1.png", "/products/el-016/2.png", "/products/el-016/3.png", "/products/el-016/4.png"],
-    "specifications": { "length": "3 Meter", "material": "Copper Bonded Steel" },
+    "images": [
+      "products/el-016/1.png",
+      "products/el-016/2.png",
+      "products/el-016/3.png",
+      "products/el-016/4.png"
+    ],
+    "specifications": {
+      "length": "3 Meter",
+      "material": "Copper Bonded Steel"
+    },
     "tags": ["Earthing", "Safety"],
     "stock": { "available": true, "quantity": 180 },
     "createdAt": "2024-12-26"

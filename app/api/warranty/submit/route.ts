@@ -1,5 +1,5 @@
 //app/api/warranty/submit/route.ts
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 import { WarrantyMailService } from "@/lib/mail/warranty-mail.service";
 
 export async function POST(req: NextRequest) {
@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
     if (!data.name || !data.email || !data.phone) {
       return NextResponse.json(
         { success: false, error: "Missing required fields" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -24,13 +24,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("❌ Error submitting warranty:", error);
-    
+
     return NextResponse.json(
-      { 
-        success: false, 
-        error: error instanceof Error ? error.message : "Failed to send email" 
+      {
+        success: false,
+        error: error instanceof Error ? error.message : "Failed to send email",
       },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

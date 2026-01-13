@@ -16,7 +16,7 @@ export async function GET() {
     console.error("our-journey GET error:", error);
     return NextResponse.json(
       { error: "Failed to load journey timeline" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
-import { Card, CardContent } from "@/components/ui/card";
 import type { Testimonial } from "@/app/api/testimonials/types/testimonial.types";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function TestimonialItem({ item }: { item: Testimonial }) {
   const safeName = item?.name || "Anonymous";

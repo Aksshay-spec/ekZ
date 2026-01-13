@@ -1,13 +1,11 @@
 // components/products/category-carousel-products/CategoryProductsSection.tsx
 
-import SectionHeader from "@/components/common/SectionHeader";
-import CategoryProductsCarousel from "./CategoryProductsCarousel";
-
 import { CategoryRepositoryFactory } from "@/app/api/categories/repositories/factory/CategoryRepositoryFactory";
 import { CategoryService } from "@/app/api/categories/services/category.service";
-
 import { ProductRepositoryFactory } from "@/app/api/products/repositories/factory/ProductRepositoryFactory";
 import { ProductService } from "@/app/api/products/services/product.service";
+import SectionHeader from "@/components/common/SectionHeader";
+import CategoryProductsCarousel from "./CategoryProductsCarousel";
 
 export default async function CategoryProductsSection() {
   const categoryRepo = CategoryRepositoryFactory.getInstance();
@@ -22,7 +20,7 @@ export default async function CategoryProductsSection() {
     categories.map(async (category) => ({
       category,
       products: await productService.getProductsByCategory(category.key),
-    }))
+    })),
   );
 
   return (

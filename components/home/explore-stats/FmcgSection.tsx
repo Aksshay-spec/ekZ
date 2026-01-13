@@ -1,9 +1,9 @@
 "use client";
 
-import SectionHeader from "@/components/common/SectionHeader";
-import CircleIcon from "@/components/common/CircleIcon";
-import { PackageCheck, Warehouse, Boxes, Undo2 } from "lucide-react";
+import { Boxes, PackageCheck, Undo2, Warehouse } from "lucide-react";
 import Image from "next/image";
+import CircleIcon from "@/components/common/CircleIcon";
+import SectionHeader from "@/components/common/SectionHeader";
 
 export default function FmcgSection() {
   return (

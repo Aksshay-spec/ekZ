@@ -1,6 +1,7 @@
 //app/api/categories/repositories/factory/CategoryRepositoryFactory.ts
-import type { CategoryRepository } from "../interfaces/CategoryRepository";
+
 import { CategoryJsonRepository } from "../implementations/CategoryJsonRepository";
+import type { CategoryRepository } from "../interfaces/CategoryRepository";
 // import { CategoryDbRepository } from "../implementations/CategoryDbRepository";
 
 export class CategoryRepositoryFactory {

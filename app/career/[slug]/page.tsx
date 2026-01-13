@@ -1,9 +1,10 @@
 //app/career/[slug]/page.tsx
-import { notFound } from "next/navigation";
-import { CareerCardsService } from "@/app/api/career-cards/services/careerCards.service";
-import { CareerCardsRepositoryFactory } from "@/app/api/career-cards/repositories/factory/CareerCardsRepositoryFactory";
-import { Button } from "@/components/ui/button";
+
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import { CareerCardsRepositoryFactory } from "@/app/api/career-cards/repositories/factory/CareerCardsRepositoryFactory";
+import { CareerCardsService } from "@/app/api/career-cards/services/careerCards.service";
+import { Button } from "@/components/ui/button";
 
 type PageProps = {
   params: Promise<{

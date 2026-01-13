@@ -1,8 +1,7 @@
 // app/api/our-news/repositories/factory/OurNewsRepositoryFactory.ts
 
-import type { OurNewsRepository } from "../interfaces/OurNewsRepository";
 import { OurNewsJsonRepository } from "../implementations/OurNewsJsonRepository";
-
+import type { OurNewsRepository } from "../interfaces/OurNewsRepository";
 
 export class OurNewsRepositoryFactory {
   static getInstance(): OurNewsRepository {

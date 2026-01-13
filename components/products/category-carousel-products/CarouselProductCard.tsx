@@ -29,7 +29,16 @@ export default function CarouselProductCard({ product }: Props) {
   // const imageSrc = product.images?.[0]
   //   ? `/images/products/${product.images[0]}`
   //   : "/images/products/placeholder.png";
-  const imageSrc = product.images?.[0] ?? "/images/products/placeholder.png";
+
+  // const imageSrc = product.images?.[0] ?? "/images/products/placeholder.png";
+
+  const CLOUDINARY_BASE = process.env.NEXT_PUBLIC_CLOUDINARY_BASE;
+
+  const imagePublicId = product.images?.[0] ?? null;
+
+  const imageSrc = imagePublicId
+    ? `${CLOUDINARY_BASE}/${imagePublicId}`
+    : "/images/products/placeholder.png";
 
   return (
     <Card className="hover:shadow-md transition rounded-2xl">

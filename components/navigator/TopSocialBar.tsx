@@ -1,4 +1,6 @@
-import SocialIcon, { type SocialIconProps } from "@/components/navigator/SocialIcon";
+import SocialIcon, {
+  type SocialIconProps,
+} from "@/components/navigator/SocialIcon";
 
 type TopSocialBarProps = {
   socialLinks: SocialIconProps[];
