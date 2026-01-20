@@ -8,7 +8,7 @@ export default function PartnerImage() {
       {/* 🔹 Banner Image */}
       <div className="mb-8 w-full overflow-hidden">
         <Image
-          src="/images/tc.jpg"
+          src="/images/partners.jpg"
           alt="Terms and Conditions"
           width={1200}
           height={600}
