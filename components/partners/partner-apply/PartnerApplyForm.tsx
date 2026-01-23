@@ -70,7 +70,7 @@ export default function PartnerApplyForm() {
         try {
           const token = await window.grecaptcha.execute(
             process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
-            { action: "partner_apply" }
+            { action: "partner_apply" },
           );
           resolve(token || null);
         } catch {
@@ -129,7 +129,7 @@ export default function PartnerApplyForm() {
 
   return (
     <section className="mx-auto max-w-4xl px-4 py-20">
-        <h1 className="text-3xl font-bold mb-2">Partner With Us</h1>
+      <h1 className="text-3xl font-bold mb-2">Partner With Us</h1>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <FormField

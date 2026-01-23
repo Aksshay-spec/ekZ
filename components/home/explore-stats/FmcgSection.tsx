@@ -1,3 +1,4 @@
+//components/home/explore-stats/FmcgSection.tsx
 "use client";
 
 import { Boxes, PackageCheck, Undo2, Warehouse } from "lucide-react";
@@ -7,24 +8,26 @@ import SectionHeader from "@/components/common/SectionHeader";
 
 export default function FmcgSection() {
   return (
-    <div className="text-center">
-      {/* IMPORTED HEADER */}
+    <div className="text-center flex flex-col">
       <SectionHeader
         title="Ekjahan FMCG"
         subtitle="Powering Every Connection"
       />
 
-      <Image
-        src="/images/3.png"
-        alt="Ekjahan FMCG Products"
-        width={500}
-        height={500}
-        className="mx-auto w-full  object-contain rounded-xl"
-      />
+      {/* IMAGE CONTAINER */}
+      <div className="relative w-full h-[320px] md:h-[420px] overflow-hidden rounded-2xl">
+        <Image
+          src="/images/3.png"
+          alt="Ekjahan FMCG Products"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
 
-      {/* STATS — ALWAYS 2 CIRCLES PER ROW */}
-      <div className="grid grid-cols-2 gap-10 mt-8">
-        <div className="flex flex-col items-center text-center">
+      {/* STATS */}
+      <div className="grid grid-cols-2 gap-10 mt-10 md:mt-40">
+        <div className="flex flex-col items-center">
           <CircleIcon variant="primary" size={140}>
             <PackageCheck size={60} color="white" />
           </CircleIcon>
@@ -34,7 +37,7 @@ export default function FmcgSection() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center">
           <CircleIcon variant="primary" size={140}>
             <Warehouse size={60} color="white" />
           </CircleIcon>
@@ -42,7 +45,7 @@ export default function FmcgSection() {
           <p className="text-lg opacity-85 mt-1">Packs Distributed</p>
         </div>
 
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center">
           <CircleIcon variant="primary" size={140}>
             <Boxes size={60} color="white" />
           </CircleIcon>
@@ -50,7 +53,7 @@ export default function FmcgSection() {
           <p className="text-lg opacity-85 mt-1">Retail Shelves Stocked</p>
         </div>
 
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center">
           <CircleIcon variant="primary" size={140}>
             <Undo2 size={60} color="white" />
           </CircleIcon>

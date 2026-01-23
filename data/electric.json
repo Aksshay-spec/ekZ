@@ -46,10 +46,10 @@
     "colors": ["White"],
     "wattages": ["7kW"],
     "images": [
-      "products/el-002/1.png",
-      "products/el-002/2.png",
-      "products/el-002/3.png",
-      "products/el-002/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "power": "7kW",
@@ -77,10 +77,10 @@
     "reviewCount": 86,
     "colors": ["Gray"],
     "images": [
-      "products/el-003/1.png",
-      "products/el-003/2.png",
-      "products/el-003/3.png",
-      "products/el-003/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "protection": "IP65",
@@ -107,10 +107,10 @@
     "colors": ["White"],
     "wattages": ["5kW"],
     "images": [
-      "products/el-004/1.png",
-      "products/el-004/2.png",
-      "products/el-004/3.png",
-      "products/el-004/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "power": "5kW",
@@ -137,10 +137,10 @@
     "colors": ["Black"],
     "wattages": ["100W", "150W"],
     "images": [
-      "products/el-005/1.png",
-      "products/el-005/2.png",
-      "products/el-005/3.png",
-      "products/el-005/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "wattage": "150W",
@@ -165,10 +165,10 @@
     "reviewCount": 980,
     "colors": ["White"],
     "images": [
-      "products/el-006/1.png",
-      "products/el-006/2.png",
-      "products/el-006/3.png",
-      "products/el-006/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "current": "32A",
@@ -193,10 +193,10 @@
     "reviewCount": 210,
     "colors": ["White"],
     "images": [
-      "products/el-007/1.png",
-      "products/el-007/2.png",
-      "products/el-007/3.png",
-      "products/el-007/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "phase": "Single",
@@ -221,10 +221,10 @@
     "reviewCount": 540,
     "colors": ["Black"],
     "images": [
-      "products/el-008/1.png",
-      "products/el-008/2.png",
-      "products/el-008/3.png",
-      "products/el-008/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "core": "4 Core",
@@ -250,10 +250,10 @@
     "colors": ["Blue"],
     "wattages": ["550W"],
     "images": [
-      "products/el-009/1.png",
-      "products/el-009/2.png",
-      "products/el-009/3.png",
-      "products/el-009/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "power": "550W",
@@ -279,10 +279,10 @@
     "colors": ["Black"],
     "wattages": ["10kVA"],
     "images": [
-      "products/el-010/1.png",
-      "products/el-010/2.png",
-      "products/el-010/3.png",
-      "products/el-010/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "capacity": "10 kVA",
@@ -308,10 +308,10 @@
     "colors": ["Gray"],
     "wattages": ["90W", "120W"],
     "images": [
-      "products/el-011/1.png",
-      "products/el-011/2.png",
-      "products/el-011/3.png",
-      "products/el-011/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": { "wattage": "120W", "ipRating": "IP66" },
     "tags": ["LED", "Outdoor"],
@@ -333,10 +333,10 @@
     "colors": ["Gray"],
     "wattages": ["7.5kW"],
     "images": [
-      "products/el-012/1.png",
-      "products/el-012/2.png",
-      "products/el-012/3.png",
-      "products/el-012/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": { "powerRange": "7.5kW", "control": "Vector Control" },
     "tags": ["VFD", "Automation"],
@@ -357,10 +357,10 @@
     "reviewCount": 64,
     "colors": ["Black"],
     "images": [
-      "products/el-013/1.png",
-      "products/el-013/2.png",
-      "products/el-013/3.png",
-      "products/el-013/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": { "current": "1600A", "breakingCapacity": "65kA" },
     "tags": ["ACB", "Safety"],
@@ -381,10 +381,10 @@
     "reviewCount": 720,
     "colors": ["Black", "Gold"],
     "images": [
-      "products/el-014/1.png",
-      "products/el-014/2.png",
-      "products/el-014/3.png",
-      "products/el-014/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": { "connectivity": "WiFi", "voiceSupport": true },
     "tags": ["Smart", "Home"],
@@ -406,10 +406,10 @@
     "colors": ["Blue"],
     "wattages": ["100kVA"],
     "images": [
-      "products/el-015/1.png",
-      "products/el-015/2.png",
-      "products/el-015/3.png",
-      "products/el-015/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": { "capacity": "100 kVA", "cooling": "ONAN" },
     "tags": ["Transformer", "Industrial"],
@@ -430,10 +430,10 @@
     "reviewCount": 330,
     "colors": ["Copper"],
     "images": [
-      "products/el-016/1.png",
-      "products/el-016/2.png",
-      "products/el-016/3.png",
-      "products/el-016/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "length": "3 Meter",

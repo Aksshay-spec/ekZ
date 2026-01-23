@@ -6,7 +6,7 @@ import SectionHeader from "@/components/common/SectionHeader";
 
 export default function PartnerProcessSection() {
   return (
-    <section className="mx-auto  px-6 py-24">
+    <section className="mx-auto  px-6 pt-10 pb-20">
       <SectionHeader
         title="Grow Your Business With Us"
         subtitle="Our Partner Onboarding Process"

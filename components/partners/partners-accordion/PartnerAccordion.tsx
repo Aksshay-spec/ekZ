@@ -9,7 +9,7 @@ export default function PartnerAccordion({
   items: CareerAccordionItem[];
 }) {
   return (
-    <section className="mt-0 mb-20 ">
+    <section className="pt-10 mb-10 px-4">
       <div className="mx-auto max-w-3xl">
         {/* Section Header */}
         <SectionHeader

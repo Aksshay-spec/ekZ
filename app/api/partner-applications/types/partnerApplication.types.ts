@@ -4,7 +4,7 @@ export type PartnerApplication = {
   email: string;
   phone: string;
   address: string;
-  distributor: string;
   partnerType: string;
+  remarks?: string;
   createdAt: string;
 };

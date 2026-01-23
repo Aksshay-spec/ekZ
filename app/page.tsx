@@ -1,5 +1,5 @@
 import ExploreMoreSection from "@/components/home/explore/ExploreMoreSection";
-import ExploreStatsWrapper from "@/components/home/explore-stats/ExploreStats";
+import ExploreStatsSection from "@/components/home/explore-stats/ExploreStatsSection";
 import HomeSliderSection from "@/components/home/home-slider/HomeSliderSection";
 import OurJourneySection from "@/components/home/our-journey/OurJourneySection";
 import OurNewsSection from "@/components/home/our-news/OurNewsSection";
@@ -9,6 +9,7 @@ import SkuProductsSection from "@/components/home/sku-products/SkuProductsSectio
 import TestimonialSection from "@/components/home/testimonial/TestimonialSection";
 // import SaptaarSection from "@/components/home/timeline/SaptaarSection";
 import TrendingProductsSection from "@/components/home/trending-products/TrendingProductsSection";
+import ExploreHeader from "@/components/home/explore/ExploreHeader";
 
 export default async function Page() {
   return (
@@ -22,8 +23,9 @@ export default async function Page() {
       <OurJourneySection />
       <PartnerSection />
       <PolicySection />
-      <ExploreMoreSection />
-      <ExploreStatsWrapper />
+      <ExploreHeader />
+      {/* <ExploreMoreSection /> */}
+      <ExploreStatsSection />
     </main>
   );
 }

@@ -1,37 +1,37 @@
+//components/home/explore-stats/SaptaarSection.tsx
 "use client";
 
 import {
   Badge,
   Boxes,
-  Cpu,
   FireExtinguisher,
   Lightbulb,
-  Plug,
-  ShieldCheck,
-  Zap,
 } from "lucide-react";
-import CircleIcon from "@/components/common/CircleIcon";
+import Image from "next/image";
 import HorizontalCard from "@/components/common/cards/HorizontalCard";
 import SectionHeader from "@/components/common/SectionHeader";
 
 export default function SaptaarSection() {
   return (
-    <div className="text-center">
-      {/* IMPORTED HEADER — VALUES PASSED HERE */}
+    <div className="text-center flex flex-col">
       <SectionHeader
         title="Saptaar Electric"
         subtitle="Powering Every Connection"
       />
 
-      {/* Background Image */}
-      <img
-        src="/images/2.png"
-        alt="About Background"
-        className=" w-full h-full object-cover"
-      />
+      {/* IMAGE CONTAINER — SAME HEIGHT */}
+      <div className="relative w-full h-[320px] md:h-[420px] overflow-hidden rounded-2xl">
+        <Image
+          src="/images/2.png"
+          alt="Saptaar Electric Products"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
 
       {/* STATS */}
-      <div className="grid grid-cols-1 gap-10 mt-8">
+      <div className="grid grid-cols-1 gap-10 mt-10">
         <HorizontalCard
           icon={<Boxes size={60} />}
           title="150+"
@@ -42,7 +42,7 @@ export default function SaptaarSection() {
 
         <HorizontalCard
           icon={<Lightbulb size={60} />}
-          title="1,200+s"
+          title="1,200+"
           description="Used in 1,200+ housing projects"
           iconBg="aqua-green"
           shade={400}
@@ -67,3 +67,4 @@ export default function SaptaarSection() {
     </div>
   );
 }
+

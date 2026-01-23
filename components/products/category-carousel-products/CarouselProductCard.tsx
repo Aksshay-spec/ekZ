@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { cloudinaryUrl } from "@/lib/cloudinary";
 
 type Props = {
   product: {
@@ -26,19 +27,25 @@ export default function CarouselProductCard({ product }: Props) {
       ? Math.round(((product.mrp - product.price) / product.mrp) * 100)
       : null;
 
+      //1st
   // const imageSrc = product.images?.[0]
   //   ? `/images/products/${product.images[0]}`
   //   : "/images/products/placeholder.png";
 
+  //2nd
   // const imageSrc = product.images?.[0] ?? "/images/products/placeholder.png";
 
-  const CLOUDINARY_BASE = process.env.NEXT_PUBLIC_CLOUDINARY_BASE;
+  //3rd
+  // const CLOUDINARY_BASE = process.env.NEXT_PUBLIC_CLOUDINARY_BASE;
 
-  const imagePublicId = product.images?.[0] ?? null;
+  // const imagePublicId = product.images?.[0] ?? null;
 
-  const imageSrc = imagePublicId
-    ? `${CLOUDINARY_BASE}/${imagePublicId}`
-    : "/images/products/placeholder.png";
+  // const imageSrc = imagePublicId
+  //   ? `${CLOUDINARY_BASE}/${imagePublicId}`
+  //   : "/images/products/placeholder.png";
+
+  //4th
+  const imageSrc = cloudinaryUrl(product.images?.[0]);
 
   return (
     <Card className="hover:shadow-md transition rounded-2xl">

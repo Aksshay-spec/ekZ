@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import { useRef } from "react";
+import { cloudinaryUrl } from "@/lib/cloudinary";
 
 type Props = {
   images: string[];
@@ -19,9 +20,6 @@ export default function ProductGallery({
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // ✅ Normalize image path for Next/Image
-  const getImageSrc = (src: string) => (src.startsWith("/") ? src : `/${src}`);
-
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = containerRef.current?.getBoundingClientRect();
     if (!rect) return;
@@ -32,22 +30,30 @@ export default function ProductGallery({
     onHover({ x, y });
   };
 
+  const activeSrc = cloudinaryUrl(activeImage);
+
   return (
     <div className="flex gap-4">
       {/* Thumbnails */}
       <div className="flex flex-col gap-2">
         {images.map((img) => {
-          const src = getImageSrc(img);
+          const src = cloudinaryUrl(img);
 
           return (
             <button
               key={img}
-              onClick={() => setActiveImage(src)}
+              onClick={() => setActiveImage(img)}
               className={`border rounded p-1 ${
-                activeImage === src ? "border-blue-500" : ""
+                activeSrc === src ? "border-blue-500" : "border-gray-200"
               }`}
             >
-              <Image src={src} alt="" width={60} height={60} />
+              <Image
+                src={src}
+                alt=""
+                width={60}
+                height={60}
+                className="object-contain"
+              />
             </button>
           );
         })}
@@ -61,7 +67,7 @@ export default function ProductGallery({
         className="relative w-[450px] h-[450px] border rounded overflow-hidden cursor-crosshair"
       >
         <Image
-          src={getImageSrc(activeImage)}
+          src={activeSrc}
           alt=""
           fill
           className="object-contain"

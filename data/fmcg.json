@@ -13,10 +13,10 @@
     "reviewCount": 1241,
     "weights": ["5kg", "10kg", "20kg"],
     "images": [
-      "/products/fm-001/1.png",
-      "/products/fm-001/2.png",
-      "/products/fm-001/3.png",
-      "/products/fm-001/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "organic": true,
@@ -41,10 +41,10 @@
     "reviewCount": 860,
     "weights": ["1L"],
     "images": [
-      "/products/fm-002/1.png",
-      "/products/fm-002/2.png",
-      "/products/fm-002/3.png",
-      "/products/fm-002/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "coldPressed": true
@@ -68,10 +68,10 @@
     "reviewCount": 2100,
     "weights": ["10kg"],
     "images": [
-      "/products/fm-003/1.png",
-      "/products/fm-003/2.png",
-      "/products/fm-003/3.png",
-      "/products/fm-003/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "fiberRich": true
@@ -95,10 +95,10 @@
     "reviewCount": 640,
     "weights": ["500g"],
     "images": [
-      "/products/fm-004/1.png",
-      "/products/fm-004/2.png",
-      "/products/fm-004/3.png",
-      "/products/fm-004/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "organic": true
@@ -122,10 +122,10 @@
     "reviewCount": 1320,
     "weights": ["200g"],
     "images": [
-      "/products/fm-005/1.png",
-      "/products/fm-005/2.png",
-      "/products/fm-005/3.png",
-      "/products/fm-005/4.png"
+      "products/el-001/1.png",
+      "products/el-001/2.png",
+      "products/el-001/3.png",
+      "products/el-001/4.png"
     ],
     "specifications": {
       "caffeine": "Medium"

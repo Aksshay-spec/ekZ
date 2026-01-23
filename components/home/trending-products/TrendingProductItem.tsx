@@ -1,15 +1,18 @@
 //components/home/trending-products/TrendingProductItem.tsx
 import Image from "next/image";
 import type { TrendingProduct } from "@/app/api/trending-products/types/trendingProduct.types";
+import { cloudinaryUrl } from "@/lib/cloudinary";
 
 export default function TrendingProductItem({
   product,
 }: {
   product: TrendingProduct;
 }) {
-  const imageSrc = product?.image
-    ? `/images/${product.image}`
-    : "/images/placeholder.png";
+  // const imageSrc = product?.image
+  //   ? `/images/${product.image}`
+  //   : "/images/placeholder.png";
+
+  const imageSrc = cloudinaryUrl(product.image);
 
   return (
     <div

@@ -1,4 +1,5 @@
 //components/products/category-trending-products/CategoryTrendingProductItem.tsx
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/app/api/products/types/product.types";

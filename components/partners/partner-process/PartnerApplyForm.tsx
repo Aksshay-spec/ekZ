@@ -37,8 +37,7 @@ const schema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
   phone: z.string(),
-  address: z.string().min(10),
-  distributor: z.string(),
+  remarks: z.string().min(10),
   partnerType: z.string(),
 });
 
@@ -54,8 +53,7 @@ export default function PartnerApplyForm() {
       name: "",
       email: "",
       phone: "",
-      address: "",
-      distributor: "",
+      remarks: "",
       partnerType: "",
     },
   });
@@ -177,14 +175,38 @@ export default function PartnerApplyForm() {
           />
         </div>
 
-        {/* Address (full width) */}
+        {/* Partner Type */}
         <div className="md:col-span-2">
           <FormField
-            name="address"
+            name="partnerType"
             control={form.control}
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Address</FormLabel>
+                <FormLabel>Partner Type</FormLabel>
+                <Select value={field.value} onValueChange={field.onChange}>
+                  <FormControl>
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder="Select partner type" />
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent>
+                    <SelectItem value="Distributor">Distributor</SelectItem>
+                    <SelectItem value="Vendor">Vendor</SelectItem>
+                  </SelectContent>
+                </Select>
+              </FormItem>
+            )}
+          />
+        </div>
+
+        {/* Remarks*/}
+        <div className="md:col-span-2">
+          <FormField
+            name="remarks"
+            control={form.control}
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Remarks</FormLabel>
                 <FormControl>
                   <Textarea rows={4} {...field} />
                 </FormControl>
@@ -192,50 +214,6 @@ export default function PartnerApplyForm() {
             )}
           />
         </div>
-
-        {/* Distributor */}
-        <FormField
-          name="distributor"
-          control={form.control}
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Distributor</FormLabel>
-              <Select onValueChange={field.onChange}>
-                <FormControl>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select distributor" />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent>
-                  <SelectItem value="option-1">Option 1</SelectItem>
-                  <SelectItem value="option-2">Option 2</SelectItem>
-                </SelectContent>
-              </Select>
-            </FormItem>
-          )}
-        />
-
-        {/* Partner Type */}
-        <FormField
-          name="partnerType"
-          control={form.control}
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Partner Type</FormLabel>
-              <Select onValueChange={field.onChange}>
-                <FormControl>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select partner type" />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent>
-                  <SelectItem value="option-1">Option 1</SelectItem>
-                  <SelectItem value="option-2">Option 2</SelectItem>
-                </SelectContent>
-              </Select>
-            </FormItem>
-          )}
-        />
 
         {/* Submit */}
         <div className="md:col-span-2">
@@ -247,4 +225,3 @@ export default function PartnerApplyForm() {
     </Form>
   );
 }
-

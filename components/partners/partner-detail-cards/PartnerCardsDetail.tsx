@@ -34,11 +34,11 @@ export default function PartnerCardsDetail() {
               </CardHeader>
 
               <CardContent className="p-6 space-y-4">
-                <h2 className="text-2xl font-semibold text-redish-pink-700">
+                <h2 className="text-2xl font-semibold text-center md:text-left text-black">
                   Become Our Partner
                 </h2>
 
-                <p className="text-redish-pink-900 leading-relaxed">
+                <p className="text-black leading-relaxed text-center md:text-left">
                   Join hands with Ekjahan as a trusted partner and expand your
                   business reach. As a partner, you get access to our platform,
                   operational support, and long-term growth opportunities built
@@ -66,11 +66,11 @@ export default function PartnerCardsDetail() {
               </CardHeader>
 
               <CardContent className="p-6 space-y-4">
-                <h2 className="text-2xl font-semibold text-aqua-green-700">
+                <h2 className="text-2xl font-semibold text-black text-center md:text-left">
                   Become Our Distributor
                 </h2>
 
-                <p className="text-aqua-green-900 leading-relaxed">
+                <p className="text-black leading-relaxed text-center md:text-left">
                   Work as an authorized distributor with Ekjahan and manage
                   product distribution in your region. We empower distributors
                   with reliable supply chains, competitive margins, and

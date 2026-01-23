@@ -12,7 +12,7 @@ export default function PartnerProcess() {
 
       <div className="grid flex-1 grid-cols-1 gap-6 md:grid-cols-3">
         <Card className="flex flex-col border border-aqua-green-200">
-          <CardContent className="flex flex-1 flex-col gap-4 p-8">
+          <CardContent className="flex flex-1 flex-col gap-4 p-8 items-center text-center md:text-left md:items-start">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-redish-pink-100 text-redish-pink-600">
               <FileText size={22} />
             </div>
@@ -25,7 +25,7 @@ export default function PartnerProcess() {
         </Card>
 
         <Card className="flex flex-col border border-aqua-green-200">
-          <CardContent className="flex flex-1 flex-col gap-4 p-8">
+          <CardContent className="flex flex-1 flex-col gap-4 p-8 items-center text-center md:text-left md:items-start">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-redish-pink-100 text-redish-pink-600">
               <Search size={22} />
             </div>
@@ -40,7 +40,7 @@ export default function PartnerProcess() {
         </Card>
 
         <Card className="flex flex-col border border-aqua-green-200">
-          <CardContent className="flex flex-1 flex-col gap-4 p-8">
+          <CardContent className="flex flex-1 flex-col gap-4 p-8 items-center text-center md:text-left md:items-start">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-redish-pink-100 text-redish-pink-600">
               <PhoneCall size={22} />
             </div>

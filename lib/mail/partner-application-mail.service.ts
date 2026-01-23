@@ -8,8 +8,8 @@ export class PartnerApplicationMailService {
     name: string;
     email: string;
     phone: string;
-    distributor: string;
     partnerType: string;
+    remarks?: string;
   }) {
     if (!process.env.RESEND_API_KEY) {
       throw new Error("RESEND_API_KEY not configured");
@@ -24,8 +24,8 @@ export class PartnerApplicationMailService {
         <p><strong>Name:</strong> ${data.name}</p>
         <p><strong>Email:</strong> ${data.email}</p>
         <p><strong>Phone:</strong> ${data.phone}</p>
-        <p><strong>Distributor:</strong> ${data.distributor}</p>
         <p><strong>Partner Type:</strong> ${data.partnerType}</p>
+        <p><strong>Message:</strong> ${data.remarks}</p>
       `,
     });
   }

@@ -20,8 +20,8 @@ export async function POST(req: Request) {
       name: body.name,
       email: body.email,
       phone: body.phone,
-      distributor: body.distributor,
       partnerType: body.partnerType,
+      remarks: body.remarks,
     });
 
     return NextResponse.json({ success: true });

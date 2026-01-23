@@ -2,6 +2,7 @@ import React from "react";
 import type { Slide } from "@/app/api/home-slider/types/homeSlider.types";
 import { Button } from "@/components/ui/button";
 import CarouselIndicators from "./CarouselIndicators";
+import { cloudinaryUrl } from "@/lib/cloudinary";
 
 type Props = {
   slide: Slide;
@@ -19,9 +20,22 @@ export default function SlideItem({
   onSelect,
 }: Props) {
   // --- Safe guards ---
-  const imageSrc = slide?.image
-    ? `/images/${slide.image}`
-    : "/images/placeholder.png";
+  //1st
+  // const imageSrc = slide?.image
+  //   ? `/images/${slide.image}`
+  //   : "/images/placeholder.png";
+
+  //2md
+  //     const CLOUDINARY_BASE = process.env.NEXT_PUBLIC_CLOUDINARY_BASE;
+
+  // const imagePublicId = slide.image?.[0] ?? null;
+
+  // const imageSrc = imagePublicId
+  //   ? `${CLOUDINARY_BASE}/${imagePublicId}`
+  //   : "/images/products/placeholder.png";
+
+  //3rd
+  const imageSrc = cloudinaryUrl(slide.image);
 
   const title = slide?.title ?? "";
 
